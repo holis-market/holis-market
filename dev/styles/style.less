@@ -1,0 +1,248 @@
+// 1. CSS RESET
+// 2. VARIABLE DEFINITIONS
+// 3. HEADER
+// 4. FOOTER
+// 5. CONTENT
+// 6. GENERAL CLASSES
+
+/*** 1. CSS RESET ***/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	//font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*** 2. VARIABLE DEFINITIONS ***/
+/// dimensions
+@page-width: 960px;
+/// colors
+@yellow: rgb(230, 197, 19);
+@orange: rgb(234, 94, 19);
+@green: rgb(123, 187, 49);
+@grey: rgb(130, 130, 130);
+@darkgrey: rgb(70, 70, 70);
+
+
+/*** 3. HEADER ***/
+/* http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu */
+#header{
+    margin: 40px 0;
+    .navbar{
+        float: left;
+        ul{
+            list-style: none;
+            position: relative;
+            display: inline-table;
+            li{
+                float: left;
+                a{
+                    padding: 10px 30px;
+                    .foreground-darkgrey;
+                    font-size: 1.43em;
+                    display: block;
+                    text-decoration: none;
+                }
+                #nav-we:hover{
+                    .foreground-yellow;
+                }
+                #nav-offer:hover{
+                    .foreground-orange;
+                }
+                #nav-special:hover{
+                    .foreground-green;
+                }
+                #nav-join:hover{
+                    color: @darkgrey - #FFF;
+                }
+            }
+            
+            ul{
+        	    display: none;
+        	    padding: 0;
+        	    position: absolute;
+        	    top: 100%;
+        	    li{
+        	        float: none;
+        	        position: relative;
+        	        background: white;
+        	        margin-top: -20px;
+        	        margin-right: -10px;
+        	        margin-bottom: -20px;
+        	        margin-left: -10px;
+            	    padding-top: 10px;
+            	    padding-right: 10px;
+            	    padding-bottom: 10px;
+            	    padding-left: 10px;
+            	    a{
+            	        .foreground-grey;
+        	            font-size: 1.2em;
+        	            &:hover{
+        	                .foreground-darkgrey;
+        	            }
+            	    }
+        	    }
+        	    :first-child{
+        	        margin-top: -5px;
+        	        padding-top: 10px;
+    	        }
+            }
+            li:hover > ul{
+                display: block;
+            }
+        }
+    }
+}
+
+#navbar-logo-container img{
+    width: 200px;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#startpage-logo-container img{
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*** 4. FOOTER ***/
+#footer{
+    margin-top: 50px;
+    *{
+        line-height: 126%;
+    }
+    .links>ul>li{
+        width: 20%;
+        float: left;
+        *{
+            font-size: 0.95em;
+        }
+        a{
+            .foreground-darkgrey;
+            text-decoration: none;
+        }
+    }
+    .social{
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    div, li{
+        text-align: center;
+    }
+}
+
+
+/*** 5. CONTENT ***/
+
+#page-container{
+    width: @page-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content-container{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+
+/*** 6. GENERAL CLASSES ***/
+/// foregrounds
+.foreground-yellow{
+    color: @yellow;
+}
+.foreground-orange{
+    color: @orange;
+}
+.foreground-green{
+    color: @green;
+}
+.foreground-grey{
+    color: @grey;
+}
+.foreground-darkgrey{
+    color: @darkgrey;
+}
+/// backgrounds
+.background-yellow{
+    background-color: @yellow;
+}
+.background-orange{
+    background-color: @orange;
+}
+.background-green{
+    background-color: @green;
+}
+.background-grey{
+    background-color: @grey;
+}
+.background-darkgrey{
+    background-color: @darkgrey;
+}
+/// html helpers
+/* http://css-tricks.com/snippets/css/clear-fix/ */
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+/// general
+.bold{
+    font-weight: bold;
+}
+
+
+*{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}

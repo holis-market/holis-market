@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="holisApp">
+
+<head>
+  <!-- SPELLS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+  <script src="./angular/app.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+  <!-- AngularJS Routing Fix -->
+  <base href="/holis/">
+</head>
+
+<!-- define angular controller -->
+<body>
+  <div id="page-container">
+    <div id="header">
+      <div ng-if="startpage" id="startpage-logo-container">
+        <img src="./images/logo.png" alt="holis market [logo]"/>
+      </div>
+      <div ng-if="!startpage" class="group">
+        <div class="navbar ">
+          <ul>
+            <li>
+              <a id="nav-we" href="#team">wir</a>
+              <ul>
+                <li class="first-child"><a href="#team">Team</a></li>
+                <li><a href="#idea">Idee</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#way">Unser Weg</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="nav-offer" href="#box">bieten</a>
+              <ul>
+                <li><a href="#box">holis Box</a></li>
+                <li><a href="#services">Services</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="nav-special" href="#12or3">besonderes</a>
+              <ul>
+                <li><a href="#12or3">1,2 oder 3</a></li>
+                <li><a href="#holispedia">Holispedia</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="nav-join" href="#myholis">mach mit!</a>
+              <ul>
+                <li><a href="#myholis">Mein holis</a></li>
+                <li><a href="#testimonials">Testimonials/Unterst&uuml;tzer</a></li>
+                <li><a href="#getsupplier">Lieferant werden</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="navbar-logo-container">
+          <img src="./images/logo.png" alt="holis market [logo]"/>
+        </div>
+      </div>
+      <div style="clear:both;"/>
+    </div>
+    <div id="content-container">
+
+      <!-- angular templating -->
+      <!-- this is where content will be injected -->
+      <div ng-view></div>
+    </div>
+    <div id="footer">
+      <div class="links group">
+        <ul>
+          <li>
+            <div class="bold">wir</div>
+            <ul>
+              <li><a href="#team">team</a></li>
+              <li><a href="#idea">idee</a></li>
+              <li><a href="#vision">vision</a></li>
+              <li><a href="#way">unser weg</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class = "bold">bieten</div>
+            <ul>
+              <li><a href="#box">holis box</a></li>
+              <li><a href="#services">services</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="bold">besonderes</div>
+            <ul>
+              <li><a href="#12or3">1,2 oder 3</a></li>
+              <li><a href="#holispedia">holispedia</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="bold">mach mit!</div>
+            <ul>
+              <li><a href="#myholis">mein holis</a></li>
+              <li><a href="#testimonials">testimonials</a></li>
+              <li><a href="#getsupplier">lieferant werden</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="bold">sitemap</div>
+            <ul>
+              <li><a href="#news">news</a></li>
+              <li><a href="#contact">kontakt</a></li>
+              <li><a href="#imprint">impressum</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        facebook - twitter
+      </div>
+      <div id="copyright" class="bold">
+        &copy; 2014 by holis
+      </div>
+    </div>
+  </div>
+</body>
+</html>
