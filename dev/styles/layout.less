@@ -1,0 +1,197 @@
+/* -----------------------------------------------------------------
+company:		holis-market
+contact:		holis@holis-market.at
+description:	stylesheet for layouting
+author:			franz seher (franz@holis-market.at)
+url:			http://holis-market.at
+------------------------------------------------------------------ */
+
+
+/*** HEADER ***/
+#header {
+  margin: 40px 0;
+}
+#header .navbar {
+  float: left;
+}
+#header .navbar ul {
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+#header .navbar ul li {
+  float: left;
+}
+#header .navbar ul li a {
+  padding: 10px 30px;
+  color: #464646;
+  font-size: 1.43em;
+  display: block;
+  text-decoration: none;
+}
+#header .navbar ul li #nav-we:hover {
+  color: #e6c513;
+}
+#header .navbar ul li #nav-offer:hover {
+  color: #ea5e13;
+}
+#header .navbar ul li #nav-special:hover {
+  color: #7bbb31;
+}
+#header .navbar ul li #nav-join:hover {
+  color: #000000;
+}
+#header .navbar ul ul {
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+}
+#header .navbar ul ul li {
+  float: none;
+  position: relative;
+  background: white;
+  margin-top: -20px;
+  margin-right: -10px;
+  margin-bottom: -20px;
+  margin-left: -10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+#header .navbar ul ul li a {
+  color: #828282;
+  font-size: 1.2em;
+}
+#header .navbar ul ul li a:hover {
+  color: #464646;
+}
+#header .navbar ul ul :first-child {
+  margin-top: -5px;
+  padding-top: 10px;
+}
+#header .navbar ul li:hover > ul {
+  display: block;
+}
+
+/* http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu */
+/*
+#header{ 
+    margin: 40px 0;
+    .navbar {
+        float: left;
+        ul {
+            list-style: none;
+            position: relative;
+            display: inline-table;
+            li{
+                float: left;
+                a{
+                    .fg-greydark;
+                    padding: 10px 30px;
+                    font-size: 1.43em;
+                    display: block;
+                    text-decoration: none;
+                }
+                #nav-we:hover{
+                    .fg-yellow;
+                }
+                #nav-offer:hover{
+                    .fg-orange;
+                }
+                #nav-special:hover{
+                    .fg-green;
+                }
+                #nav-join:hover{
+                    @cGreyDark - @cWhite;
+                }
+            }
+            ul{
+        	    display: none;
+        	    padding: 0;
+        	    position: absolute;
+        	    top: 100%;
+        	    li{
+        	       .bg-white;
+        	        float: none;
+        	        position: relative;
+        	        margin-top: -20px;
+        	        margin-right: -10px;
+        	        margin-bottom: -20px;
+        	        margin-left: -10px;
+            	    padding-top: 10px;
+            	    padding-right: 10px;
+            	    padding-bottom: 10px;
+            	    padding-left: 10px;
+            	    a{
+            	        .fg-grey;
+        	            font-size: 1.2em;
+        	            &:hover{
+        	                .fg-greydark;
+        	            }
+            	    }
+        	    }
+        	    :first-child{
+        	        margin-top: -5px;
+        	        padding-top: 10px;
+    	        }
+            }
+            li:hover > ul{
+                display: block;
+            }
+        }
+    }
+}
+*/
+#navbar-logo-container img{
+    width: 200px;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#startpage-logo-container img{
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*** CONTENT ***/
+#page-container{
+    width: @page-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content-container{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+/*** FOOTER ***/
+#footer{
+    margin-top: 50px;
+    *{
+        line-height: 126%;
+    }
+    .links>ul>li{
+        width: 20%;
+        float: left;
+        *{
+            font-size: 0.95em;
+        }
+        a{
+            .fg-greydark;
+            text-decoration: none;
+        }
+    }
+    .social{
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    div, li{
+        text-align: center;
+    }
+}
