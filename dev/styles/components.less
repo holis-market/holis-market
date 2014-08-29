@@ -1,4 +1,4 @@
-/* -----------------------------------------------------------------
+﻿/* -----------------------------------------------------------------
 company:		holis-market
 contact:		holis@holis-market.at
 description:	stylesheet for component styles
@@ -7,9 +7,27 @@ url:			http://holis-market.at
 ------------------------------------------------------------------ */
 
 /*** BUTTONS ***/
-
+.button {
+  .c-pointer;
+  .fg-white;
+  .bold;
+  .center;
+  width: 150px;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+}
+.button:hover {
+  box-shadow: 2px 2px 1px @cBlack;
+}
 
 /*** LINKS ***/
-
-
-/*** ::: ***/
+a.link {
+  text-decoration: none;
+}
+a:link:hover {
+  text-decoration: underline;
+}
