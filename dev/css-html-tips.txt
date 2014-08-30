@@ -1,8 +1,0 @@
-Place text over images on hover without JavaScript > http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/
-Pure CSS Image Hover > http://kyleschaeffer.com/development/pure-css-image-hover/
-Metro UI CSS / Live Tiles > http://metroui.org.ua/tiles.html
-
-
-TODO
-preload images fast for css and html images
-insert google analytics in index.html + configuration

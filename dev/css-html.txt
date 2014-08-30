@@ -1,0 +1,12 @@
+Place text over images on hover without JavaScript > http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/
+Pure CSS Image Hover > http://kyleschaeffer.com/development/pure-css-image-hover/
+Metro UI CSS / Live Tiles > http://metroui.org.ua/tiles.html
+
+
+TODOs
+* preload images fast for css and html images
+* insert google analytics in index.html + configuration
+* radienter farbverlauf bei grauen hintergründen, css3?
+* live tiles (wechselnde bilder), jquery?
+* anpassen der team-fotos, kleine bugs - flatternde bilder
+* newsletter anmeldung auf startseite mit plz-angabe (für marketing-zwecke)
