@@ -12,10 +12,50 @@
 			</p>
 		</div>
 		<br><br>
-		<div class="button bg-orange center-div" style="width:180px">Testimonial werden</div>
-		
+		<a href="#" onclick="toggle_visibility('form');return false;">
+			<div class="button bg-orange center-div" style="width:180px">Testimonial werden</div>
+		</a>
+		<div class="metro" style="margin-top: 20px;">
+			<form id="form" style="display:none;">
+				<fieldset>
+					<div class="input-control text" data-role="input-control" style="width:250px;" >
+						<input type="text" placeholder="Vorname"></input>
+						<button class="btn-clear" tabindex="-1" type="button"></button>
+					</div>
+					<div class="input-control text" data-role="input-control" style="width:250px;" >
+						<input type="text" placeholder="Nachname"></input>
+						<button class="btn-clear" tabindex="-1" type="button"></button>
+					</div>
+					<div class="input-control text" data-role="input-control" style="width:250px;" >
+						<input type="text" placeholder="Unternehmen"></input>
+						<button class="btn-clear" tabindex="-1" type="button"></button>
+					</div>
+					<div class="input-control text" data-role="input-control" style="width:50px;" >
+						<input type="text" placeholder="PLZ"></input>
+						<button class="btn-clear" tabindex="-1" type="button"></button>
+					</div>
+					<div class="input-control text" data-role="input-control" style="width:250px;" >
+						<input type="text" placeholder="Warum finde ich, dass holis toll ist?"></input>
+						<button class="btn-clear" tabindex="-1" type="button"></button>
+					</div>
+					<br></br>
+					<div class="input-control file" data-role="input-control" style="width:250px;" >
+						<input type="file" style="z-index: 0;" tabindex="-1"></input>
+						<input id="__input_file_wrapper__" type="text" placeholder="Foto auswählen" style="z-index: 1; cursor: default;" readonly=""></input>
+						<button class="btn-file" type="button"></button>
+					</div>
+					<br></br>
+					<input type="submit" value="Submit"></input>
+					<input type="reset" value="Reset"></input>
+					<div class="clear"></div>
+				</fieldset>
+			</form>
+		</div>
 	</div>
 	<div class="content-desc-arrow">
 		<img src="./images/bg/arrow-yellow.png" style="width:100px;" />
 	</div>
+	
+
+	
 	<div class="content-main">

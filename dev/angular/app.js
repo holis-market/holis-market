@@ -7,6 +7,7 @@
 
 		.when('/', { templateUrl : 'pages/home.html' })
 		.when('/team', { templateUrl : 'pages/team.html' })
+		.when('/partner', { templateUrl : 'pages/partner.html' })
 		.when('/idea', { templateUrl : 'pages/idea.html' })
 		.when('/vision', { templateUrl : 'pages/vision.html' })
 		.when('/way', { templateUrl : 'pages/way.html' })

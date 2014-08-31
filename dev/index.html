@@ -37,6 +37,16 @@
 	ga('create', 'UA-53949357-1', 'auto');
 	ga('send', 'pageview');
   </script>
+  <script> /* hide and show elements */
+	function toggle_visibility(id) {
+		var e = document.getElementById(id);
+		if(e.style.display == 'block') {
+			e.style.display = 'none';
+		} else {
+			e.style.display = 'block';
+		}
+	}
+  </script>
 </head>
 
 <!-- define angular controller -->
@@ -77,6 +87,7 @@
               <a id="nav-we" href="#team">wir</a>
               <ul>
                 <li class="first-child"><a href="#team">Team</a></li>
+				<li><a href="#partner">Partner</a></li>
                 <li><a href="#idea">Idee</a></li>
                 <li><a href="#vision">Vision</a></li>
                 <li><a href="#way">Unser Weg</a></li>
@@ -124,6 +135,7 @@
             <div class="bold">wir</div>
             <ul>
               <li><a href="#team">team</a></li>
+			  <li><a href="#partner">partner</a></li>
               <li><a href="#idea">idee</a></li>
               <li><a href="#vision">vision</a></li>
               <li><a href="#way">unser weg</a></li>
