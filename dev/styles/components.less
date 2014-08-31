@@ -6,6 +6,29 @@ author:			franz seher (franz@holis-market.at)
 url:			http://holis-market.at
 ------------------------------------------------------------------ */
 
+
+/*** ARROWS ***/
+.arrows {
+  display: block;
+  width: 36px;
+  height: 36px;
+  text-indent: -99999px;
+}
+.arrow-left {
+  .arrows;
+  background: url('../images/icon/arrow-grey-left-small.png') 0 0;
+}
+.arrow-left:hover {
+  background-position: bottom;
+}
+.arrow-right {
+  .arrows;
+  background: url('../images/icon/arrow-grey-right-small.png') 0 0;
+}
+.arrow-right:hover {
+  background-position: bottom;
+}
+  
 /*** BUTTONS ***/
 .button {
   .c-pointer;
@@ -20,7 +43,7 @@ url:			http://holis-market.at
   border-radius: 4px;
 }
 .button:hover {
-  box-shadow: 2px 2px 1px @cBlack;
+  .shadow;
 }
 
 /*** LINKS ***/
@@ -36,3 +59,5 @@ a.link {
 a.link:hover {
   text-decoration: underline;
 }
+
+

@@ -29,29 +29,14 @@
 	
 	<div class="content-main">
 		<div class="fleft testimonial-pic">
-			<img src="./images/pic/testimonials/eipeltauer-small.png" width="260px" />
-			<!--<button class="button" id="createFlatWindow">Größer Auflösung</button>-->
+			<a class="fancybox" rel="group" href="./images/pic/testimonials/eipeltauer-large.png">
+				<img src="./images/pic/testimonials/eipeltauer-small.png" width="260px" />
+			</a>
+			<br>
+			<a class="fancybox" rel="group" href="./images/pic/testimonials/eipeltauer-large.png">
+				<div class="button bg-yellow center-div" style="width:200px">Bild in großer Auflösung</div>
+			</a>
 		</div>
-		<script>
-			$("#createFlatWindow").on('click', function(){
-				$.Dialog({
-					overlay: true,
-					shadow: true,
-					flat: true,
-					draggable: true,
-					icon: '<img src="./images/icon/lock.png">',
-					title: 'Flat window',
-					content: '',
-					padding: 10,
-					onShow: function(_dialog){
-						var content = '<img src="./images/pic/testimonials/arzberger-large.png" width="600px" />';
-						$.Dialog.title("User login");
-						$.Dialog.content(content);
-					}
-				});
-			});
-                </script>
-		
 		<div class="fright">
 			<div class="testimonial-desc left">
 				<div class="testimonial-desc-name h5">Katharina Eipeltauer & Dancepoint Austria</div>
@@ -86,11 +71,21 @@
 				</div>
 			</div>
 			<div class="testimonial-navi">
-				<div class="fleft"><a href="#team-sonja"><img src="./images/icon/arrow-grey-left.png" title="Sonja Grünzweil" alt="Sonja Grünzweil" width="36px" /></a></div>
-				<div class="fright"><a href="#team-sabrina"><img src="./images/icon/arrow-grey-right.png" title="Sabrina Fleisch" alt="Sabrina Fleisch" width="36px" /></a></div>
-				<div class="clear" />
+				<div class="fleft">
+					<a href="#team-sonja">
+						<div class="arrow-left"></div>
+						<!--<img src="./images/icon/arrow-grey-left.png" title="Sonja Grünzweil" alt="Sonja Grünzweil" width="36px" />-->
+					</a>
+				</div>
+				<div class="fright">
+					<a href="#team-sabrina">
+						<div class="arrow-right"></div>
+						<!--<img src="./images/icon/arrow-grey-right.png" title="Sabrina Fleisch" alt="Sabrina Fleisch" width="36px" />-->
+					</a>
+				</div>
+				<div class="clear"></div>
 			</div>
 		</div>
+		<div class="clear"></div>
 	</div>
-	<div class="clear"></div>
 </div>

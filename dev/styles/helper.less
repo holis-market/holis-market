@@ -7,7 +7,7 @@ url:			http://holis-market.at
 ------------------------------------------------------------------ */
 
 
-/* http://css-tricks.com/snippets/css/clear-fix/ */
+/*** CLEAR FIX - http://css-tricks.com/snippets/css/clear-fix ***/
 .group:after {
 	visibility: hidden;
 	display: block;
@@ -18,28 +18,27 @@ url:			http://holis-market.at
 * html .group             { zoom: 1; } /* IE6 */
 *:first-child+html .group { zoom: 1; } /* IE7 */
 
+/*** ALIGNMENT ***/
 .left { text-align: left; }
 .right { text-align: right; }
 .center { text-align: center; }
-
-.center-div {
-   margin: 0 auto;
-}
-
+.center-div {  margin: 0 auto; }
 .fleft { float:left; }
 .fright { float:right; }	
 .clear { clear: both;}
 
+/*** CURSOR ***/
 .c-pointer{ cursor: pointer; }
 .c-normal{ cursor: default; }
 
-.fullwidth {
-  width: 100%;
-}
+/*** WIDTH & HEIGHT ***/
+.fullwidth { width: 100%; }
+.halfwidth { width: 50%; }
 
-.hide {
-  display: none;
- }
-.show {
-  display: inline;
-}
+/*** DISPLAY ***/
+.hide { display: none; }
+.show {  display: inline; }
+
+/*** OTHER GLOBAL SETTINGS ***/
+.shadow { box-shadow: 2px 2px 1px @cBlack; }
+
