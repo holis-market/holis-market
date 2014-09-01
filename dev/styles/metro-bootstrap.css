@@ -4848,7 +4848,7 @@ a {
   width: 180px;
   height: 180px;
   margin: 0 20px 20px 0;
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 .metro .tile.half {
   width: 55px;

@@ -5,9 +5,13 @@ Fancybox: enlarging images in Window 				> http://fancyapps.com/fancybox/
 CSS Image Filters 									> http://html5-demos.appspot.com/static/css/filters/index.html (does not work in FF & IE)
 Clear Fix Hack										> http://css-tricks.com/snippets/css/clear-fix
 Google Analytics									> https://www.google.com/analytics/web/?et&authuser=0#management/Settings/a53949357w86762086p90035085/%3Fm.page%3DTrackingCode/
+SMACSS												> https://smacss.com/book/type-module
+
 
 TODOs
 * radienter farbverlauf bei grauen hintergründen, css3?
 * live tiles (wechselnde bilder), jquery?
 * anpassen der team-fotos, kleine bugs - flatternde bilder
 * newsletter anmeldung auf startseite mit plz-angabe (für marketing-zwecke)
+* testimonial overview (same as team view)
+* partner page (neuburger, iris, manfred n., toby, wolfgang lehner, achleitner, ...)
