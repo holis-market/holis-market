@@ -17,7 +17,7 @@
 		.when('/holispedia', { templateUrl : 'pages/holispedia.html' })
 		.when('/myholis', { templateUrl : 'pages/myholis.html' })
 		.when('/testimonials', { templateUrl : 'pages/testimonials.html' })
-		.when('/getsupplier', { templateUrl : 'pages/getsupplier.html' })
+		.when('/supplier', { templateUrl : 'pages/supplier.html' })
 		.when('/team-belinda', { templateUrl : 'pages/team-belinda.html' })
 		.when('/team-sarah', { templateUrl : 'pages/team-sarah.html' })
 		.when('/team-sonja', { templateUrl : 'pages/team-sonja.html' })

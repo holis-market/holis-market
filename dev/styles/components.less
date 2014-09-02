@@ -32,15 +32,14 @@ url:			http://holis-market.at
 /*** METRO TILES ***/
 .metro .tile {
   .fleft;
-  .c-pointer;
-  .bg-greylight;
   .block;
   position: relative;
   overflow: hidden;
   margin: 0 10px 10px 0;
   padding: 0;
 }
-.metro .tile:hover {
+.metro .unlocked:hover {
+  .c-pointer;
   .outline;
 }
 .metro .tile:active {
@@ -86,7 +85,32 @@ url:			http://holis-market.at
   top: 0;
   z-index: 101;
 }
-  
+.metro .tile .newsletter {
+  .left;
+  padding: 10px;
+  padding-top: 20px;
+}
+.metro .tile .header {
+  .center;
+  .bold;
+  .font-copyserif; 
+  margin-top: 50px;
+}
+.metro .tile .subtitle {
+  .opacity;
+  .bg-black;
+  .fg-white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 29px;
+  margin: 0;
+  padding-top: 5px; 
+}
+.metro .tile .subtitle:hover {
+  .opacity-no;
+}
 /*** BUTTONS ***/
 .button {
   .c-pointer;
@@ -122,35 +146,20 @@ url:			http://holis-market.at
   .outline;
 }
 
-.metro .input-control.text input,
-.metro .input-control.password input,
-.metro .input-control.file input,
-.metro .input-control.email input,
-.metro .input-control.tel input,
-.metro .input-control.number input {
+.metro .input-control input{
   border: 1px @cGrey solid;
+  font-size: 18px;
   width: 100%;
   height: 100%;
   padding: 5px;
   z-index: 1;
   -webkit-appearance: none;
 }
-.metro .input-control.text input:focus,
-.metro .input-control.password input:focus,
-.metro .input-control.file input:focus,
-.metro .input-control.email input:focus,
-.metro .input-control.tel input:focus,
-.metro .input-control.number input:focus {
+.metro .input-control input:focus {
   outline: 0;
   border-color: @cBlack;
 }
-
-.metro .input-control.text,
-.metro .input-control.password,
-.metro .input-control.file,
-.metro .input-control.email,
-.metro .input-control.tel,
-.metro .input-control.number {
+.metro .input-control {
   .c-pointer;
   .bg-white;
   display: inline-block;
@@ -158,22 +167,6 @@ url:			http://holis-market.at
   outline: 0;
   height: 38px;
   width: 100%;
-}
-.metro .tile .header {
-  .center;
-  .bold;
-  .font-copyserif; 
-  margin-top: 50px;
-}
-
-.metro .tile .subtitle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  min-height: 29px;
-  margin: 0;
-  padding-top: 5px;
 }
 
 /*** LINKS ***/
