@@ -2375,18 +2375,21 @@ a {
   padding: .3em 1em;
   float: left;
   text-decoration: none;
-  color: #2e92cf;
+  color: #8FBF34;
   position: relative;
 }
 .metro .breadcrumbs ul a:hover {
-  background: #1ba1e2;
+  background: #d9d9d9;
   color: #ffffff;
 }
+.metro .breadcrumbs ul .active a:hover {
+  color: #333333 !important;
+}
 .metro .breadcrumbs ul a:hover:before {
-  border-color: #1ba1e2 #1ba1e2 #1ba1e2 transparent;
+  border-color: #d9d9d9 #d9d9d9 #d9d9d9 transparent;
 }
 .metro .breadcrumbs ul a:hover:after {
-  border-left-color: #1ba1e2;
+  border-left-color: #d9d9d9;
 }
 .metro .breadcrumbs ul a:before {
   content: "";
