@@ -25,6 +25,7 @@
 		.when('/team-bernhard', { templateUrl : 'pages/team-bernhard.html' })
 		.when('/team-sabrina', { templateUrl : 'pages/team-sabrina.html' })
 		.when('/testimonial-eipeltauer', { templateUrl : 'pages/testimonials/testimonial-eipeltauer.html' })
+		.when('/testimonial-seyr', { templateUrl : 'pages/testimonials/testimonial-seyr.html' })
 		
 		;
 		// use the HTML5 History API
