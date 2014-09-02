@@ -464,15 +464,6 @@ a {
 .metro .text-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
-.metro .opacity {
-  opacity: .9;
-}
-.metro .half-opacity {
-  opacity: .5;
-}
-.metro .hi-opacity {
-  opacity: .2;
-}
 .metro .clearfix:before,
 .metro .clearfix:after {
   display: table;
@@ -941,13 +932,6 @@ a {
 .metro a:active,
 .metro .link:active {
   color: rgba(45, 173, 237, 0.6);
-}
-.metro div,
-.metro span,
-.metro p {
-  font-family: 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  font-style: normal;
 }
 .metro p {
   margin: 0 0 7pt;
@@ -4853,10 +4837,6 @@ a {
 .metro .tile .tile-status:after {
   clear: both;
 }
-.metro .tile .brand.opacity,
-.metro .tile .tile-status.opacity {
-  opacity: .7;
-}
 .metro .tile .brand .name,
 .metro .tile .tile-status .name,
 .metro .tile .brand .label,
@@ -4966,12 +4946,6 @@ a {
   top: 50%;
   margin-top: -18.66666667px;
   margin-left: -18.66666667px;
-}
-.metro .tile {
-  font-family: 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-}
-.metro .tile * {
-  font-family: 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 }
 .metro .tile.scale {
   -webkit-transform: scale(0.98);
