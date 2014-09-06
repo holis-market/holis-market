@@ -12,15 +12,12 @@ TODOs
 * page idee
 * texte holispedia
 * font corbel?
-* start page: weißes schloss in der mitte, rest ist 80% transparent
-* on hover wird text wie bei members eingblendet
 * radienter farbverlauf bei grauen hintergründen, css3?
 * live tiles (wechselnde bilder), jquery?
 * testimonial overview (same as team view)
 * partner page (hans neuburger, iris mayr, manfred ninaus, toby, wolfgang lehner, heinz hochstetter, achleitner, christoph außerwöger, gernot zwingler...)
-* bug in team members
 * profil von sarah und bernhard
-
+* texte auslagern, properties file
 
 LINKS
 - wir
