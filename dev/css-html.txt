@@ -17,6 +17,8 @@ TODOs
 * förderer (hans neuburger, iris mayr, umut kivrak, manfred ninaus, toby, wolfgang lehner, heinz hochstetter, achleitner, christoph außerwöger, gernot zwingler...)
 * texte auslagern, properties file
 * captcha für formulare (gemüse/frucht einblenden und texteingange mit antwort)
+* inputfelder zu textarea machen (damit mehr platz zum schreiben)
+* prozesse classic/convenience/comfort unter detailansicht bei 1,2 oder 3
 
 LINKS
 - wir
