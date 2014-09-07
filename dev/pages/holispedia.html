@@ -15,7 +15,7 @@
 	<div class="content-desc-arrow" style="background:#eecf0d !important;">
 		<img src="./images/bg/arrow-orange.png" style="width:100px;"></img>
 	</div>
-	<div class="content-desc bg-yellow">
+	<div id="carousel-features" class="content-desc bg-yellow">
 		<div class="center fg-white">
 			<div>
 				<div class="holispedia-arrow fleft">
@@ -69,64 +69,66 @@
 	</div>
 	<div class="content-desc bg-green">
 		<div class="center fg-white">
-			<div>
-				<div class="holispedia-arrow fleft">
+			<div style="overflow: hidden;">
+				<div id="carousel-products-previous" class="holispedia-arrow fleft">
 					<img src="./images/icon/arrow-white-left.png"></img>
 				</div>
-				
-				<!-- hidden feature -->
-				<div class="holispedia fleft" style="display:none;">
-					<div class="holispedia-img" style="padding-top:40px;">
-						<img src="./images/scribbles/scribble-zerowaste.png"></img>
+
+				<div id="carousel-products">
+					<!-- hidden feature -->
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:10px;">
+							<img src="./images/scribbles/scribble-zerowaste.png"></img>
+						</div>
+						<div class="holispedia-title fg-white">
+							Zero Waste
+						</div>
+						<div class="holispedia-subtext fg-white">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+						</div>
 					</div>
-					<div class="holispedia-title fg-white">
-						Zero Waste
+					
+					<!-- active features -->
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:40px;">
+							<img src="./images/scribbles/scribble-mehrweg.png"></img>
+						</div>
+						<div class="holispedia-title fg-white">
+							Mehrwegsystem
+						</div>
+						<div class="holispedia-subtext fg-white">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+						</div>
 					</div>
-					<div class="holispedia-subtext fg-white">
-						lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-						lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:30px;">
+							<img src="./images/scribbles/scribble-beratung.png"></img>
+						</div>
+						<div class="holispedia-title fg-white">
+							Beratung
+						</div>
+						<div class="holispedia-subtext fg-white">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+						</div>
+					</div>
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:30px;">
+							<img src="./images/scribbles/scribble-box.png"></img>
+						</div>
+						<div class="holispedia-title fg-white">
+							Bestellung nach Rezept
+						</div>
+						<div class="holispedia-subtext fg-white">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+						</div>
 					</div>
 				</div>
-				
-				<!-- active features -->
-				<div class="holispedia fleft" style="display:inline;">
-					<div class="holispedia-img" style="padding-top:40px;">
-						<img src="./images/scribbles/scribble-mehrweg.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						Mehrwegsystem
-					</div>
-					<div class="holispedia-subtext fg-white">
-						lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-						lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-					</div>
-				</div>
-				<div class="holispedia fleft">
-					<div class="holispedia-img" style="padding-top:30px;">
-						<img src="./images/scribbles/scribble-beratung.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						Beratung
-					</div>
-					<div class="holispedia-subtext fg-white">
-						lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-						lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-					</div>
-				</div>
-				<div class="holispedia fleft">
-					<div class="holispedia-img" style="padding-top:30px;">
-						<img src="./images/scribbles/scribble-box.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						Bestellung nach Rezept
-					</div>
-					<div class="holispedia-subtext fg-white">
-						lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-						lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-					</div>
-				</div>
-				
-				<div class="holispedia-arrow fleft">
+
+				<div id="carousel-products-next" class="holispedia-arrow fleft">
 					<img src="./images/icon/arrow-white-right.png"></img>
 				</div>
 				<div class="clear"></div>
@@ -134,3 +136,16 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	var $carousel_products = $('#carousel-products').carousel({
+			start: 3
+		});
+	  
+	$('#carousel-products-previous').on('click', function(ev) {
+	  $carousel_products.carousel('prev');
+	});
+	$('#carousel-products-next').on('click', function(ev) {
+	  $carousel_products.carousel('next');
+	});
+</script>
