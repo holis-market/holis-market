@@ -21,18 +21,17 @@
 	</div>
 	<div class="tile unlocked">
 		<a href="#testimonials">
-<<<<<<< HEAD
-		<div class="tile-content"><img src="./images/pic/testimonials/arzberger-large.png" width="180px"></div>
-		<div class="tile-content"><img src="./images/pic/testimonials/brandstaetter-large.png" width="180px"></div>
-		<!-- add more -->
-		<div class="subtitle">
-			<span class="text">Die Testimonials</span>
-		</div>
-=======
+			<div class="live tile" data-role="live-tile" data-effect="slideUpDown">
+				<div class="tile-content image"><img src="./images/pic/testimonials/arzberger-large.png" width="180px"></div>
+				<div class="tile-content image"><img src="./images/pic/testimonials/brandstaetter-large.png" width="180px"></div>
+			</div>
+			<!-- add more -->
+			<div class="subtitle">
+				<span class="text">Die Testimonials</span>
+			</div>
 			<div class="tile-content">
 				<div class="tile-content-image-testimonial"></div>
 			</div>
->>>>>>> origin/master
 		</a>
 	</div>
 	<!-- row 2 -->
@@ -43,19 +42,20 @@
 	</div>
 	<div class="tile double bg-white">
 		<div class="newsletter">
-			<form>
+			<form id="form-newsletter" action="//holis-market.us8.list-manage.com/subscribe/post-json?u=6a203375c1611668d0a2e786c&id=99dc037f98&c=?" method="get">
 				<fieldset>
 					<div class="tile-newsletter-header"><!-- text --></div>
 					<div class="input-control" data-role="input-control" style="width:250px;" >
-						<input type="text" placeholder="E-Mail Adresse"></input>
+						<input type="text" name="EMAIL" placeholder="E-Mail Adresse"></input>
 					</div>
 					<div class="input-control" data-role="input-control" style="width:100px;" >
-						<input type="text" placeholder="PLZ"></input>
+						<input type="text" name="ZIPCODE" placeholder="PLZ"></input>
 					</div>
+					<div style="position: absolute; left: -5000px;"><input type="text" name="b_6a203375c1611668d0a2e786c_99dc037f98" tabindex="-1" value=""></div>
 					<br>
 					<br>
 					<div class="center fullwidth">
-						<input class="bg-green" type="submit" value="Ja, ich will auf dem Laufenden bleiben!"></input>
+						<input class="bg-green" type="submit" value="Ja, ich will auf dem Laufenden bleiben!" ></input>
 					</div>
 					<div class="clear"></div>
 				</fieldset>
@@ -117,3 +117,15 @@
 	</div>	
 </div>
 <div class="clear" />
+
+<script>
+	$(document).ready( function () {
+		var $form = $('#form-newsletter');
+
+        $('#form-newsletter input[type="submit"]').bind('click', function ( event ) {
+	            event.preventDefault();
+	            sendMailchimpForm($form);
+	        }
+	    );
+	});
+</script>

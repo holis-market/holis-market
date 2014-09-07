@@ -1015,6 +1015,9 @@ url:			http://holis-market.at
   width: 40px;
   padding-top: 180px;
 }
+.holispedia-arrow img {
+  cursor: pointer;
+}
 .holispedia-img {
   text-align: center;
   background: url('../images/bg/circle-white.png');
