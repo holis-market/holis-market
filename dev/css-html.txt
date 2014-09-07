@@ -9,9 +9,37 @@ SMACSS												> https://smacss.com/book/type-module
 
 
 TODOs
+* page idee
+* texte holispedia
+* font corbel?
 * radienter farbverlauf bei grauen hintergründen, css3?
 * live tiles (wechselnde bilder), jquery?
-* anpassen der team-fotos, kleine bugs - flatternde bilder
-* newsletter anmeldung auf startseite mit plz-angabe (für marketing-zwecke)
-* testimonial overview (same as team view)
-* partner page (neuburger, iris, manfred n., toby, wolfgang lehner, achleitner, ...)
+* förderer (hans neuburger, iris mayr, umut kivrak, manfred ninaus, toby, wolfgang lehner, heinz hochstetter, achleitner, christoph außerwöger, gernot zwingler...)
+* texte auslagern, properties file
+* captcha für formulare (gemüse/frucht einblenden und texteingange mit antwort)
+* inputfelder zu textarea machen (damit mehr platz zum schreiben)
+* prozesse classic/convenience/comfort unter detailansicht bei 1,2 oder 3
+
+LINKS
+- wir
+-- team
+-- idee 
+-- vision
+-- weg
+-- förderer
+-- blöde fragen (gibt es nicht) (=faqs)
+
+- bieten
+-- 1,2 oder 3
+-- service
+
+- besonderes
+-- holispedia
+-- holis box
+
+- mach micht
+-- testimonails
+-- jobs
+-- partner (=lieferanten)
+-- mein holis (check > classic/convenience/comfort)
+-- holis test (wie holis bin ich)
