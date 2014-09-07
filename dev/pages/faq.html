@@ -71,14 +71,14 @@
 		Super, schick' sie uns unkompliziert und direkt :)
 		<br><br>
 		<div class="metro">
-			<form>
+			<form id="form-faq" action="./php/add_faq.php" method="post">
 				<fieldset>
 					<div class="input-control" data-role="input-control" style="width:300px;" >
-						<input type="text" placeholder="Frage"></input>
+						<input type="text" name="QUESTION" placeholder="Frage"></input>
 					</div>
 					<br><br>
 					<div class="input-control" data-role="input-control" style="width:300px;" >
-						<input type="text" placeholder="E-Mail Adresse"></input>
+						<input type="text" name="EMAIL" placeholder="E-Mail Adresse"></input>
 					</div>
 					<br>
 					<br>
@@ -95,3 +95,29 @@
 	</div>
 	<div class="content-line-grey-down"></div>
 </div>
+
+
+<script>
+//callback handler for form submit
+$("#form-faq").submit(function(e)
+{
+    var postData = $(this).serializeArray();
+    var formURL = $(this).attr("action");
+    $.ajax(
+    {
+        url : formURL,
+        type: "POST",
+        data : postData,
+        success:function(data, textStatus, jqXHR) 
+        {
+            //data: return data from server
+        },
+        error: function(jqXHR, textStatus, errorThrown) 
+        {
+            //if fails      
+        }
+    });
+    e.preventDefault(); //STOP default action
+    e.unbind(); //unbind. to stop multiple form submit.
+});
+</script>
