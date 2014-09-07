@@ -14,10 +14,9 @@ TODOs
 * font corbel?
 * radienter farbverlauf bei grauen hintergründen, css3?
 * live tiles (wechselnde bilder), jquery?
-* testimonial overview (same as team view)
-* partner page (hans neuburger, iris mayr, manfred ninaus, toby, wolfgang lehner, heinz hochstetter, achleitner, christoph außerwöger, gernot zwingler...)
-* profil von sarah und bernhard
+* förderer (hans neuburger, iris mayr, umut kivrak, manfred ninaus, toby, wolfgang lehner, heinz hochstetter, achleitner, christoph außerwöger, gernot zwingler...)
 * texte auslagern, properties file
+* captcha für formulare (gemüse/frucht einblenden und texteingange mit antwort)
 
 LINKS
 - wir
@@ -25,7 +24,7 @@ LINKS
 -- idee 
 -- vision
 -- weg
--- partner
+-- förderer
 -- blöde fragen (gibt es nicht) (=faqs)
 
 - bieten
@@ -39,6 +38,6 @@ LINKS
 - mach micht
 -- testimonails
 -- jobs
--- holis farmer
+-- partner (=lieferanten)
 -- mein holis (check > classic/convenience/comfort)
 -- holis test (wie holis bin ich)

@@ -20,6 +20,7 @@
 		.when('/myholis', { templateUrl : 'pages/myholis.html' })
 		.when('/testimonials', { templateUrl : 'pages/testimonials.html' })
 		.when('/supplier', { templateUrl : 'pages/supplier.html' })
+		.when('/jobs', { templateUrl : 'pages/jobs.html' })
 		.when('/team-belinda', { templateUrl : 'pages/team/team-belinda.html' })
 		.when('/team-sarah', { templateUrl : 'pages/team/team-sarah.html' })
 		.when('/team-sonja', { templateUrl : 'pages/team/team-sonja.html' })
