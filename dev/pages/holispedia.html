@@ -6,91 +6,93 @@
 	<div class="content-desc bg-green">
 		<div class="center fg-white" style="padding-left:100px;padding-right:100px;">
 			<p>
-			Wir von holis denken, dass es jedem gut gehen soll. Da kann man nicht 
-			sagen, wir sind einfach "nur" Bio oder bieten regionale Lebensmittel an. 
-			Letzenendes muss das Ganze stimmen und dafür braucht es ganz viele kleine 
-			Zutaten, die wir euch hier vorstellen. Viel Spaß beim Stöbern!
+				Wir von holis denken, dass es jedem gut gehen soll. Da kann man nicht 
+				sagen, wir sind einfach "nur" Bio oder bieten regionale Lebensmittel an. 
+				Letzenendes muss das Ganze stimmen und dafür braucht es ganz viele kleine 
+				Zutaten, die wir euch hier vorstellen. Viel Spaß beim Stöbern!
 			</p>
 		</div>
 	</div>
 	<div class="content-desc-arrow" style="background:#eecf0d !important;">
 		<img src="./images/bg/arrow-green.png" style="width:100px;"></img>
 	</div>
-	<div id="carousel-features" class="content-desc bg-yellow">
+	<div class="content-desc bg-yellow">
 		<div class="center fg-white">
-			<div>
-				<div class="holispedia-arrow fleft">
+			<div style="overflow: hidden;">
+				<div id="carousel-features-previous" class="holispedia-arrow fleft">
 					<img src="./images/icon/arrow-white-left.png"></img>
 				</div>
-				
-				
-				<!-- active main features -->
-				<div class="holispedia fleft" >
-					<div class="holispedia-img" style="padding-top:40px;">
-						<img src="./images/scribbles/scribble-zerowaste.png"></img>
-					</div>
-					<div class="holispedia-title fg-black">
-						Zero Waste
-					</div>
-					<div class="holispedia-subtext fg-black">
-						Zero Waste ist der englische Ausdruck für die Vermeidung von Müll. Zero Waste ist die 
-						Philosophie, die die Wiederverwendung von vorhandenen Ressourcen bevorzugt. 
-						Unsere Komsumgesellschaft basiert auf dem einmaligen Gebrauch und dem Wegwerfen, nach dem Motto 
-						aus den Augen aus den Sinn. Ressourcen landen dann in der Regel in Müllverbrennungsanlagen oder auf Mülldeponien. 
-						Dies ist mit den Prinzipien von Zero Waste nicht vereinbar.
-					</div>
-				</div>
-				<div class="holispedia fleft">
-					<div class="holispedia-img" style="padding-top:20px;">
-						<img src="./images/scribbles/scribble-bio.png"></img>
-					</div>
-					<div class="holispedia-title fg-black">
-						Biologisch
-					</div>
-					<div class="holispedia-subtext fg-black">
-						Bio steht als Überbegriff für den biologischen Landbau. Dies wird definiert durch das Verbot von 
-						chemisch-synthetischen Pflanzenschutz und –düngemitteln, das Verbot der Gentechnik, Fütterung der Tiere mit 
-						Bioprodukten und die artgerechte Tierhaltung. Bio steht für naturbelassene Lebensmittel und den
-						schonenden Umgang mit natürlichen Ressourcen. Bio-Bauern müssen strenge Richtlinien beim Anbau beachten. 
-						Das Bio-Zertifikat ist bei holis nicht Pflicht, aber der biologische Landbau sehr wohl.
-					</div>
-				</div>
-				<div class="holispedia fleft">
-					<div class="holispedia-img" style="padding-top:40px;">
-						<img src="./images/scribbles/scribble-regio.png"></img>
-					</div>
-					<div class="holispedia-title fg-black">
-						Regional
-					</div>
-					<div class="holispedia-subtext fg-black">
-						Besonders wichtig ist für uns auch die regionale Komponente. Deswegen wollen wir einen Großteil unserer Produkte 
-						von Bauern aus der Umgebung beziehen. Dadurch wird einerseits die Frische garantiert, außerdem schonen kürzere Transportwege das Klima. 
-						Ziel sind kurze Zyklen. Vom Feld rasch ins Geschäft, vom Markt ab zum  Kunden und vom Kunden schnell in den Magen :) Lange Kühl- und 
-						Lagerketten sind die wahren Energietreiber.
-					</div>
-				</div>
-				
-				
-				<!-- hidden main feature -->
-				<div class="holispedia fleft" style="display:none;"> <!-- display:none -->
-					<div class="holispedia-img" style="padding-top:20px;">
-						<img src="./images/scribbles/scribble-saison.png"></img>
-					</div>
-					<div class="holispedia-title fg-black">
-						Saisonalität
-					</div>
-					<div class="holispedia-subtext fg-black">
-						Der menschliche Körper lebt in Einklang mit den Jahreszeiten. So ist auch die Ausrichtung der Ernährung an die jeweilige Saison 
-						sinnvoll. Es ist nicht nur gesünder, sondern auch ökologisch wirtschaftlicher. Und überhaupt, ist die Vorfreude auf bestimmte Lebensmittel 
-						wie Erdbeeren doch das schönste. Wir schätzen besonders das, was es nicht immer in Hülle und Fülle gibt. Hält man sich an 
-						die Jahreszeiten schmeckt es außerdem umso besser :)
-					</div>
-				</div>
-				
-				
-				<div class="holispedia-arrow fleft">
+				<div id="carousel-features-next" class="holispedia-arrow fleft" style="position: absolute; left: 1150px;">
 					<img src="./images/icon/arrow-white-right.png"></img>
 				</div>
+
+				<div id="carousel-features" class="holispedia-carousel">
+
+					<!-- active main features -->
+					<div class="holispedia fleft" >
+						<div class="holispedia-img" style="padding-top:40px;">
+							<img src="./images/scribbles/scribble-zerowaste.png"></img>
+						</div>
+						<div class="holispedia-title fg-black">
+							Zero Waste
+						</div>
+						<div class="holispedia-subtext fg-black">
+							Zero Waste ist der englische Ausdruck für die Vermeidung von Müll. Zero Waste ist die 
+							Philosophie, die die Wiederverwendung von vorhandenen Ressourcen bevorzugt. 
+							Unsere Komsumgesellschaft basiert auf dem einmaligen Gebrauch und dem Wegwerfen, nach dem Motto 
+							aus den Augen aus den Sinn. Ressourcen landen dann in der Regel in Müllverbrennungsanlagen oder auf Mülldeponien. 
+							Dies ist mit den Prinzipien von Zero Waste nicht vereinbar.
+						</div>
+					</div>
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:20px;">
+							<img src="./images/scribbles/scribble-bio.png"></img>
+						</div>
+						<div class="holispedia-title fg-black">
+							Biologisch
+						</div>
+						<div class="holispedia-subtext fg-black">
+							Bio steht als Überbegriff für den biologischen Landbau. Dies wird definiert durch das Verbot von 
+							chemisch-synthetischen Pflanzenschutz und –düngemitteln, das Verbot der Gentechnik, Fütterung der Tiere mit 
+							Bioprodukten und die artgerechte Tierhaltung. Bio steht für naturbelassene Lebensmittel und den
+							schonenden Umgang mit natürlichen Ressourcen. Bio-Bauern müssen strenge Richtlinien beim Anbau beachten. 
+							Das Bio-Zertifikat ist bei holis nicht Pflicht, aber der biologische Landbau sehr wohl.
+						</div>
+					</div>
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:40px;">
+							<img src="./images/scribbles/scribble-regio.png"></img>
+						</div>
+						<div class="holispedia-title fg-black">
+							Regional
+						</div>
+						<div class="holispedia-subtext fg-black">
+							Besonders wichtig ist für uns auch die regionale Komponente. Deswegen wollen wir einen Großteil unserer Produkte 
+							von Bauern aus der Umgebung beziehen. Dadurch wird einerseits die Frische garantiert, außerdem schonen kürzere Transportwege das Klima. 
+							Ziel sind kurze Zyklen. Vom Feld rasch ins Geschäft, vom Markt ab zum  Kunden und vom Kunden schnell in den Magen :) Lange Kühl- und 
+							Lagerketten sind die wahren Energietreiber.
+						</div>
+					</div>
+
+
+					<!-- hidden main feature -->
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:20px;">
+							<img src="./images/scribbles/scribble-saison.png"></img>
+						</div>
+						<div class="holispedia-title fg-black">
+							Saisonalität
+						</div>
+						<div class="holispedia-subtext fg-black">
+							Der menschliche Körper lebt in Einklang mit den Jahreszeiten. So ist auch die Ausrichtung der Ernährung an die jeweilige Saison 
+							sinnvoll. Es ist nicht nur gesünder, sondern auch ökologisch wirtschaftlicher. Und überhaupt, ist die Vorfreude auf bestimmte Lebensmittel 
+							wie Erdbeeren doch das schönste. Wir schätzen besonders das, was es nicht immer in Hülle und Fülle gibt. Hält man sich an 
+							die Jahreszeiten schmeckt es außerdem umso besser :)
+						</div>
+					</div>
+
+				</div>
+				
 				<div class="clear"></div>
 			</div>
 		</div>
@@ -101,28 +103,17 @@
 	<div class="content-desc bg-orange">
 		<div class="center fg-white">
 			<div style="overflow: hidden;">
-				<div id="carousel-products-previous" class="holispedia-arrow fleft">
+				<div id="carousel-mainfeatures-previous" class="holispedia-arrow fleft">
 					<img src="./images/icon/arrow-white-left.png"></img>
 				</div>
-<<<<<<< HEAD
+				<div id="carousel-mainfeatures-next" class="holispedia-arrow fleft" style="position: absolute; left: 1150px;">
+					<img src="./images/icon/arrow-white-right.png"></img>
+				</div>
 
-				<div id="carousel-products">
-					<!-- hidden feature -->
-					<div class="holispedia fleft">
-						<div class="holispedia-img" style="padding-top:10px;">
-							<img src="./images/scribbles/scribble-zerowaste.png"></img>
-						</div>
-						<div class="holispedia-title fg-white">
-							Zero Waste
-						</div>
-						<div class="holispedia-subtext fg-white">
-							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-						</div>
-					</div>
-					
+				<div id="carousel-mainfeatures" class="holispedia-carousel">
+
 					<!-- active features -->
-					<div class="holispedia fleft">
+					<div class="holispedia fleft" style="display:inline;">
 						<div class="holispedia-img" style="padding-top:40px;">
 							<img src="./images/scribbles/scribble-mehrweg.png"></img>
 						</div>
@@ -130,8 +121,11 @@
 							Mehrwegsystem
 						</div>
 						<div class="holispedia-subtext fg-white">
-							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+							Jährlich werden ca. 1,7 Mio. Tonnen Hausmüll in Österreich produziert. Unter Mehrwegsysteme versteht 
+							man Verpackungen, die öfters verwendet werden können. Dafür verwendet holis spezielle Reinigungssysteme, 
+							die eine keimfreie Wiederverwendung ermöglichen. Gravity Bins und die holis-Behälter (aus Glas) sparen 
+							nicht nur Plastikmüll ein, sondern sind auch noch viel zu schön, als dass man sie wegzuschmeißen würde. Dies 
+							ist nicht nur ökonomisch, sondern auch ökologisch von Vorteil.
 						</div>
 					</div>
 					<div class="holispedia fleft">
@@ -139,11 +133,14 @@
 							<img src="./images/scribbles/scribble-beratung.png"></img>
 						</div>
 						<div class="holispedia-title fg-white">
-							Beratung
+							Ernährungsberatung
 						</div>
 						<div class="holispedia-subtext fg-white">
-							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+							Da wir es uns zum Ziel setzen, deine Gesundheit zu verbessern, endet holis nicht beim Einkauf. Wir arbeiten daher mit 
+							Ernährungsberatern zusammen, die dir persönlich oder auch online via Web bzw. Smartphone dich bei deiner täglichen 
+							Ernährung unterstützen können, je nachdem welchen Lebenstil du führst bzw. in welcher Lebensphase du dich befindest. 
+							Bei uns findest du Zusatzfunktionen, die deine Einkäufe aufzeichnen, dir ein persönliches Ernährungstagebuch erstellen 
+							und dir dann anzeigen, was dein Körper für eine ausgewogene Ernährung braucht.
 						</div>
 					</div>
 					<div class="holispedia fleft">
@@ -154,143 +151,88 @@
 							Bestellung nach Rezept
 						</div>
 						<div class="holispedia-subtext fg-white">
-							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
-							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
+							Der Einkauf von einzelnen Lebensmitteln erscheint uns nicht mehr zeitgemäß. Wir unterstützen dich in in der 
+							Kreation und Zusammenstellung von fertigen Rezepten, perfekt abgestimmt auf die benötigten Portionen. Die Rezepte können 
+							dabei genauso von dir persönlich kommen. Online kannst du auf Basis unseres Sortiments selbst Rezepte kreieren, und falls du es in die 
+							endgültige Auswahl schaffst, wirst du für jede verkaufte Rezeptbox honoriert. 
+						</div>
+					</div>
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:40px;">
+							<img src="./images/scribbles/scribble-slowfood.png"></img>
+						</div>
+						<div class="holispedia-title fg-white">
+							Slow Food
+						</div>
+						<div class="holispedia-subtext fg-white">
+							Slow Food ist eine Non-Profit-Organisation, die in Italien gegründet und 1989 zu einer weltweiten Bewegung wurde. 
+							Die Organisation tritt für die Wertschätzung von Lebensmittel ein und übernimmt Verantwortung für unser Öko- und Lebensmittelsystem.
+							Weiters setzt sich Slow Food für die Wiedergewinnung einer genussvollen, vielfältigen und ganzheitlichen Ess- und Trinkkultur ein 
+							und leistet Widerstand gegen die Standardisierung von Lebensmittel und das industrielle Agrar- und Ernährungssystem. 
+							Wir sind Slow Food.
+						</div>
+					</div>
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:30px;">
+							<img src="./images/scribbles/scribble-gravitybin.png"></img>
+						</div>
+						<div class="holispedia-title fg-white">
+							Gravitationsbehälter
+						</div>
+						<div class="holispedia-subtext fg-white">
+							Mit Gravitationsbehälter - oder Gravity Bins genannt - können Lebensmittel hygienisch ohne Einwegverpackung angeboten werden. 
+							Üblicherweise sind diese aus lebensmittelechtem Kunststoff und ermöglichen je nach Bedarf eine bestimmte Menge an Lebensmittel 
+							auszugeben. Du kannst frei wählen,  wie viel du willst und wie viel du brauchst. Damit wird Verpackung eingespart und 
+							der Lebensmittelverschwendung vorgebeugt. Außerdem ist es ein Erlebnis wieder alle Lebensmittel mit all ihren wahren 
+							Farben beim Einkauf sehen zu können. 
+						</div>
+					</div>
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:30px;">
+							<img src="./images/scribbles/scribble-app.png"></img>
+						</div>
+						<div class="holispedia-title fg-white">
+							App & Online Plattform
+						</div>
+						<div class="holispedia-subtext fg-white">
+							Wir drehen das Kundenkonto einfach um. Statt es für Maßnahmen für Marktforschung- und Umsatzsteigerungen zu verwenden, 
+							wollen wir dir die Informationen zu deinem Vorteil zur Verfügung stellen. Deine bisherigen Einkäufe werden dokumentiert und können 
+							von dir beliebig ergänzt werden. Mit weiteren Infromationen wie Allergien, Unverträglichkeiten, Ernährungszielen (z.B. Diät) und 
+							anderen Vorlieben ("Ich hasse Tomaten") kann dir das System genau sagen, welche Lebensmittel und welche Rezepte dir besondern 
+							wohltun. Online bezahlen vermeidet dann auch das lästige an der Kassa stehen.
+						</div>
+					</div>
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:30px;">
+							<img src="./images/scribbles/scribble-transparenz.png"></img>
+						</div>
+						<div class="holispedia-title fg-white">
+							Transparenz
+						</div>
+						<div class="holispedia-subtext fg-white">
+							Wir sehen Transparenz als Möglichkeit Informationen zum Nutzen der Kunden bereitzustellen. Natürlich erfährst du bei uns genau 
+							über die Inhaltsstoffe der Lebensmittel, die wir im Sortiment haben, aber auch wo das Lebensmittel herkommt. Dazu wollen wir dir 
+							ganz genau sagen, wie viel vom Preis, den du bezahlst, tatsächlich in die Landwirtschaft bzw. in den biologischen Landbau 
+							zurückfließt. Unser Ziel ist es, die regionale Landwirtschaft zu fördern und so die fruchtbaren Grundlagen in der Region zu erhalten.
+						</div>
+					</div>
+					<div class="holispedia fleft">
+						<div class="holispedia-img" style="padding-top:30px;">
+							<img src="./images/scribbles/scribble-fairtrade.png"></img>
+						</div>
+						<div class="holispedia-title fg-white">
+							Fair Trade
+						</div>
+						<div class="holispedia-subtext fg-white">
+							Unter Fair Trade verstehen wird den fairen Umgang mit unseren Lebensmittelpartner. Wenn diese aus der Region kommen, ist natürlich 
+							unser oberstes Ziel langfristige Partnerschaften zu etablieren. Beim Preis wird auf die Bedürfnisse unserer Partner eingegangen. Wir sind 
+							überzeugt, dass der Weg eines ganzheitlichen Lebensmittelmarktes zur gemeinsam zu bestreiten ist. Bei Produkten, die aus ferneren Gefilden 
+							kommen (u.a. Gewürze und Reis) müssen wir uns derweilen mit dem Fair Trade Siegel, falls vorhanden, zufrieden geben. Siegel sind das eine, 
+							Vertrauen das andere.
 						</div>
 					</div>
 				</div>
-
-				<div id="carousel-products-next" class="holispedia-arrow fleft">
-=======
 				
-				
-				<!-- active features -->
-				<div class="holispedia fleft" style="display:inline;">
-					<div class="holispedia-img" style="padding-top:40px;">
-						<img src="./images/scribbles/scribble-mehrweg.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						Mehrwegsystem
-					</div>
-					<div class="holispedia-subtext fg-white">
-						Jährlich werden ca. 1,7 Mio. Tonnen Hausmüll in Österreich produziert. Unter Mehrwegsysteme versteht 
-						man Verpackungen, die öfters verwendet werden können. Dafür verwendet holis spezielle Reinigungssysteme, 
-						die eine keimfreie Wiederverwendung ermöglichen. Gravity Bins und die holis-Behälter (aus Glas) sparen 
-						nicht nur Plastikmüll ein, sondern sind auch noch viel zu schön, als dass man sie wegzuschmeißen würde. Dies 
-						ist nicht nur ökonomisch, sondern auch ökologisch von Vorteil.
-					</div>
-				</div>
-				<div class="holispedia fleft">
-					<div class="holispedia-img" style="padding-top:30px;">
-						<img src="./images/scribbles/scribble-beratung.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						Ernährungsberatung
-					</div>
-					<div class="holispedia-subtext fg-white">
-						Da wir es uns zum Ziel setzen, deine Gesundheit zu verbessern, endet holis nicht beim Einkauf. Wir arbeiten daher mit 
-						Ernährungsberatern zusammen, die dir persönlich oder auch online via Web bzw. Smartphone dich bei deiner täglichen 
-						Ernährung unterstützen können, je nachdem welchen Lebenstil du führst bzw. in welcher Lebensphase du dich befindest. 
-						Bei uns findest du Zusatzfunktionen, die deine Einkäufe aufzeichnen, dir ein persönliches Ernährungstagebuch erstellen 
-						und dir dann anzeigen, was dein Körper für eine ausgewogene Ernährung braucht.
-					</div>
-				</div>
-				<div class="holispedia fleft">
-					<div class="holispedia-img" style="padding-top:30px;">
-						<img src="./images/scribbles/scribble-box.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						Bestellung nach Rezept
-					</div>
-					<div class="holispedia-subtext fg-white">
-						Der Einkauf von einzelnen Lebensmitteln erscheint uns nicht mehr zeitgemäß. Wir unterstützen dich in in der 
-						Kreation und Zusammenstellung von fertigen Rezepten, perfekt abgestimmt auf die benötigten Portionen. Die Rezepte können 
-						dabei genauso von dir persönlich kommen. Online kannst du auf Basis unseres Sortiments selbst Rezepte kreieren, und falls du es in die 
-						endgültige Auswahl schaffst, wirst du für jede verkaufte Rezeptbox honoriert. 
-					</div>
-				</div>
-				
-				
-				<!-- hidden features -->
-				<div class="holispedia fleft" style="display:none;">
-					<div class="holispedia-img" style="padding-top:40px;">
-						<img src="./images/scribbles/scribble-slowfood.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						Slow Food
-					</div>
-					<div class="holispedia-subtext fg-white">
-						Slow Food ist eine Non-Profit-Organisation, die in Italien gegründet und 1989 zu einer weltweiten Bewegung wurde. 
-						Die Organisation tritt für die Wertschätzung von Lebensmittel ein und übernimmt Verantwortung für unser Öko- und Lebensmittelsystem.
-						Weiters setzt sich Slow Food für die Wiedergewinnung einer genussvollen, vielfältigen und ganzheitlichen Ess- und Trinkkultur ein 
-						und leistet Widerstand gegen die Standardisierung von Lebensmittel und das industrielle Agrar- und Ernährungssystem. 
-						Wir sind Slow Food.
-					</div>
-				</div>
-				<div class="holispedia fleft" style="display:none;">
-					<div class="holispedia-img" style="padding-top:30px;">
-						<img src="./images/scribbles/scribble-gravitybin.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						Gravitationsbehälter
-					</div>
-					<div class="holispedia-subtext fg-white">
-						Mit Gravitationsbehälter - oder Gravity Bins genannt - können Lebensmittel hygienisch ohne Einwegverpackung angeboten werden. 
-						Üblicherweise sind diese aus lebensmittelechtem Kunststoff und ermöglichen je nach Bedarf eine bestimmte Menge an Lebensmittel 
-						auszugeben. Du kannst frei wählen,  wie viel du willst und wie viel du brauchst. Damit wird Verpackung eingespart und 
-						der Lebensmittelverschwendung vorgebeugt. Außerdem ist es ein Erlebnis wieder alle Lebensmittel mit all ihren wahren 
-						Farben beim Einkauf sehen zu können. 
-					</div>
-				</div>
-				<div class="holispedia fleft" style="display:none;">
-					<div class="holispedia-img" style="padding-top:30px;">
-						<img src="./images/scribbles/scribble-app.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						App & Online Plattform
-					</div>
-					<div class="holispedia-subtext fg-white">
-						Wir drehen das Kundenkonto einfach um. Statt es für Maßnahmen für Marktforschung- und Umsatzsteigerungen zu verwenden, 
-						wollen wir dir die Informationen zu deinem Vorteil zur Verfügung stellen. Deine bisherigen Einkäufe werden dokumentiert und können 
-						von dir beliebig ergänzt werden. Mit weiteren Infromationen wie Allergien, Unverträglichkeiten, Ernährungszielen (z.B. Diät) und 
-						anderen Vorlieben ("Ich hasse Tomaten") kann dir das System genau sagen, welche Lebensmittel und welche Rezepte dir besondern 
-						wohltun. Online bezahlen vermeidet dann auch das lästige an der Kassa stehen.
-					</div>
-				</div>
-				<div class="holispedia fleft" style="display:none;">
-					<div class="holispedia-img" style="padding-top:30px;">
-						<img src="./images/scribbles/scribble-transparenz.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						Transparenz
-					</div>
-					<div class="holispedia-subtext fg-white">
-						Wir sehen Transparenz als Möglichkeit Informationen zum Nutzen der Kunden bereitzustellen. Natürlich erfährst du bei uns genau 
-						über die Inhaltsstoffe der Lebensmittel, die wir im Sortiment haben, aber auch wo das Lebensmittel herkommt. Dazu wollen wir dir 
-						ganz genau sagen, wie viel vom Preis, den du bezahlst, tatsächlich in die Landwirtschaft bzw. in den biologischen Landbau 
-						zurückfließt. Unser Ziel ist es, die regionale Landwirtschaft zu fördern und so die fruchtbaren Grundlagen in der Region zu erhalten.
-					</div>
-				</div>
-				<div class="holispedia fleft" style="display:none;">
-					<div class="holispedia-img" style="padding-top:30px;">
-						<img src="./images/scribbles/scribble-fairtrade.png"></img>
-					</div>
-					<div class="holispedia-title fg-white">
-						Fair Trade
-					</div>
-					<div class="holispedia-subtext fg-white">
-						Unter Fair Trade verstehen wird den fairen Umgang mit unseren Lebensmittelpartner. Wenn diese aus der Region kommen, ist natürlich 
-						unser oberstes Ziel langfristige Partnerschaften zu etablieren. Beim Preis wird auf die Bedürfnisse unserer Partner eingegangen. Wir sind 
-						überzeugt, dass der Weg eines ganzheitlichen Lebensmittelmarktes zur gemeinsam zu bestreiten ist. Bei Produkten, die aus ferneren Gefilden 
-						kommen (u.a. Gewürze und Reis) müssen wir uns derweilen mit dem Fair Trade Siegel, falls vorhanden, zufrieden geben. Siegel sind das eine, 
-						Vertrauen das andere.
-					</div>
-				</div>
-				
-				<div class="holispedia-arrow fleft">
->>>>>>> origin/master
-					<img src="./images/icon/arrow-white-right.png"></img>
-				</div>
 				<div class="clear"></div>
 			</div>
 		</div>
@@ -298,14 +240,21 @@
 </div>
 
 <script>
-	var $carousel_products = $('#carousel-products').carousel({
-			start: 3
-		});
-	  
-	$('#carousel-products-previous').on('click', function(ev) {
-	  $carousel_products.carousel('prev');
-	});
-	$('#carousel-products-next').on('click', function(ev) {
-	  $carousel_products.carousel('next');
-	});
+var $carousel_mainfeatures = $('#carousel-mainfeatures').carousel();
+
+$('#carousel-mainfeatures-previous').on('click', function(ev) {
+	$carousel_mainfeatures.carousel('prev');
+});
+$('#carousel-mainfeatures-next').on('click', function(ev) {
+	$carousel_mainfeatures.carousel('next');
+});
+
+var $carousel_features = $('#carousel-features').carousel();
+
+$('#carousel-features-previous').on('click', function(ev) {
+	$carousel_features.carousel('prev');
+});
+$('#carousel-features-next').on('click', function(ev) {
+	$carousel_features.carousel('next');
+});
 </script>
