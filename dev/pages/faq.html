@@ -112,11 +112,11 @@ $("#form-faq").submit(function(e)
         data : postData,
         success:function(data, textStatus, jqXHR) 
         {
-            //data: return data from server
+            toastr.success('Vielen Dank für deine neue Frage!');
         },
         error: function(jqXHR, textStatus, errorThrown) 
         {
-            //if fails      
+            toastr.error('Leider konnte die neue Frage nicht gestellt werden, bitte versuche es später noch einmal.');   
         }
     });
     e.preventDefault(); //STOP default action

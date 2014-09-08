@@ -19,11 +19,13 @@
   <script src="./angular/app.js"></script>
   <script src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   <script src="./js/jq.carousel.js"></script>
+  <script src="./js/toastr.min.js"></script>
 
   <!-- STYLES -->
   <link rel="stylesheet" type="text/css" media="screen" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" />
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/style.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/metro-bootstrap.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/toastr.min.css"/>
 
   <!-- SCRIPTS -->
   <script> /* fancybox */
@@ -51,6 +53,10 @@
   </script>
 
   <script>
+    toastr.options = {
+      "positionClass": "toast-bottom-full-width"
+    }
+
     function sendMailchimpForm($form) {
         $.ajax({
             type: $form.attr('method'),
@@ -59,13 +65,13 @@
             cache       : false,
             dataType    : 'json',
             contentType: "application/json; charset=utf-8",
-            error       : function(err) { /*alert("Could not connect to the registration server. Please try again later."); console.log(err);*/ },
+            error       : function(err) { toastr.error('Leider war die Anmeldung zum Newsletter nicht erfolgreich, bitte versuche es später noch einmal.'); },
             success     : function(data) {
               console.log(data);
                 if (data.result != "success") {
-                    // Something went wrong, do something to notify the user. maybe alert(data.msg);
+                    toastr.warning('Kann es sein dass du schon registriert bist?');
                 } else {
-                    // It worked, carry on...
+                    toastr.success('Vielen Dank für deine Registrierung beim holis-Newsletter! Eine holistische Mail sollte schon in deinem Posteingang gelandet sein.');
                 }
             }
         });

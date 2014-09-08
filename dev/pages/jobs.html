@@ -32,28 +32,28 @@
 			Dann schick' uns einfach deine Daten und wir melden uns bei dir :)
 			<br><br>
 			<div class="metro">
-				<form>
+				<form id="form-job" action="./php/add_job.php" method="post">
 					<fieldset>
 						<div class="input-control" data-role="input-control" style="width:200px;" >
-							<input type="text" placeholder="Name"></input>
+							<input type="text" name="NAME" placeholder="Name"></input>
 						</div>
 						<div class="input-control" data-role="input-control" style="width:200px;" >
-							<input type="text" placeholder="E-Mail Adresse"></input>
+							<input type="text" name="EMAIL" placeholder="E-Mail Adresse"></input>
 						</div>
 						<div class="input-control" data-role="input-control" style="width:200px;" >
-							<input type="text" placeholder="Telefonnummer"></input>
+							<input type="text" name="PHONENUMBER" placeholder="Telefonnummer"></input>
 						</div>
 						<br><br><br>
 						<div class="input-control" data-role="input-control" style="width:605px;" >
-							<input type="text" placeholder="In welchem Bereich könntest du uns weiterhelfen?"></input>
+							<input type="text" name="SECTOR" placeholder="In welchem Bereich könntest du uns weiterhelfen?"></input>
 						</div>
 						<br><br>
 						<div class="input-control" data-role="input-control" style="width:605px;" >
-							<input type="text" placeholder="Was ist dein beruflicher Hintergrund? (ganz kurz in Stichworten)"></input>
+							<input type="text" name="HISTORY" placeholder="Was ist dein beruflicher Hintergrund? (ganz kurz in Stichworten)"></input>
 						</div>
 						<br><br>
 						<div class="input-control" data-role="input-control" style="width:605px;" >
-							<input type="text" placeholder="Was findest du so toll an holis?"></input>
+							<input type="text" name="ABOUTHOLIS" placeholder="Was findest du so toll an holis?"></input>
 						</div>
 						<br><br>
 						<div>
@@ -67,3 +67,28 @@
 	</div>
 	<div class="content-line-grey-down"></div>
 </div>
+
+<script>
+//callback handler for form submit
+$("#form-job").submit(function(e)
+{
+    var postData = $(this).serializeArray();
+    var formURL = $(this).attr("action");
+    $.ajax(
+    {
+        url : formURL,
+        type: "POST",
+        data : postData,
+        success:function(data, textStatus, jqXHR) 
+        {
+            toastr.success('Vielen Dank für dein Interesse! Wir werden uns in Kürze bei dir melden.');
+        },
+        error: function(jqXHR, textStatus, errorThrown) 
+        {
+            toastr.error('Leider hat es ein Problem bei der Verarbeitung deiner Anfrage gegeben, bitte versuche es später noch einmal.');   
+        }
+    });
+    e.preventDefault(); //STOP default action
+    e.unbind(); //unbind. to stop multiple form submit.
+});
+</script>

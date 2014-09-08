@@ -1,4 +1,15 @@
-﻿<div>
+﻿<script>
+$(document).ready( function () {
+	var $form = $('#form-newsletter');
+	$('#form-newsletter input[type="submit"]').bind('click', function ( event ) {
+		event.preventDefault();
+		sendMailchimpForm($form);
+	}
+	);
+});
+</script>
+
+<div>
 	<div class="content-line-grey"></div>
 	<div class="content-header">
 		<div class="h1">News</div>
@@ -47,7 +58,7 @@
 			<?php 
 			/* Short and sweet */
 			define('WP_USE_THEMES', false);
-			require('../wordpress/wp-blog-header.php');
+			require('../../wordpress/wp-blog-header.php');
 			?>
 
 			<div class="news">
@@ -76,3 +87,4 @@
 		<div class="content-line-grey-down"></div>
 	</div>
 </div>
+
