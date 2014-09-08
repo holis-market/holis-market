@@ -68,7 +68,13 @@
 	holisApp.run(['$rootScope', function($rootScope){
 
 		function isHomepage(current){
-		    return current.$$route.originalPath == "/" || current.$$route.originalPath == "";
+			try{
+			    return current.$$route.originalPath == "/" || current.$$route.originalPath == "";
+			    $(".fancybox").fancybox();
+			}
+			catch(err){
+				return false;
+			}
 		}
 
 		$rootScope.$on('$routeChangeSuccess', function(event, current, previous){
