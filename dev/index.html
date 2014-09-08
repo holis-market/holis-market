@@ -5,11 +5,18 @@
 
 <head>
   <!-- META -->
-  <meta property="og:image"content="http://holis-market.at/images/logo/fb.png" /><!-- facebook preview for sharing -->
-  <meta property="og:site_name"content="holis market" /><!-- facebook preview for sharing -->
-  <meta property="og:title" content="Der Markt mit Mehrwert"/><!-- facebook preview for sharing -->
-  <meta property="og:url" content="http://holis-market.at" /> <!-- facebook preview for sharing -->
+  <meta property="og:image" content="http://holis-market.at/images/logo/fb.jpg"></meta><!-- facebook preview for sharing -->
+  <meta property="og:site_name" content="holis market"></meta><!-- facebook preview for sharing -->
+  <meta property="og:title" content="Der Markt mit Mehrwert"></meta><!-- facebook preview for sharing -->
+  <meta property="og:url" content="http://holis-market.at"></meta><!-- facebook preview for sharing -->
+  <meta property="fb:admins" content="797534040275046"><!-- facebook preview for sharing -->
+  <meta property="og:type" content="article"><!-- facebook preview for sharing -->
+  <meta property="article:publisher" content="https://www.facebook.com/HolisMarket"><!-- facebook preview for sharing -->
   
+  <meta name="description" content="holis market, Der Lebensmittelmarkt mit Mehrwert, Ernährungsberatung, Bestellung nach Rezept"></meta>
+  <meta name="robots" content="index"></meta>
+  <meta name="Author" content="holis market"></meta>
+  <meta name="Keywords" content="ernährung, nutrition, biologisch, organic, lebensmittel, groceries, zero waste, müll, waste, essen, food, service, rezepte, recipe, beratung, consulting, markt, market"></meta>
   <!-- TITLE -->
   <title>holis market</title>
   
@@ -89,6 +96,16 @@
 
 <!-- define angular controller -->
 <body>
+	<div id="fb-root"></div>
+	<script>
+	(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<div class="hide"><!-- preload impages -->
 		<img src="./images/logo/white.png" width="1" height="1" />
 		<img src="./images/logo/dark.png" width="1" height="1" />
