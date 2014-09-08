@@ -10,7 +10,6 @@ SMACSS												> https://smacss.com/book/type-module
 
 TODOs
 * page idee
-* texte holispedia
 * font corbel?
 * radienter farbverlauf bei grauen hintergründen, css3?
 * live tiles (wechselnde bilder), jquery?
@@ -22,6 +21,7 @@ TODOs
 
 LINKS
 - wir
+-- news
 -- team
 -- idee 
 -- vision

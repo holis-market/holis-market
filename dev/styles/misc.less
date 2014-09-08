@@ -53,27 +53,23 @@ url:			http://holis-market.at
 }
 .tile-content-image-idea {
   .tile-content-image;
-  background: url('../images/tiles/tile-idea-hover.png') 0 0;
+  background: url('../images/tiles/tile-idea-hover.jpg') 0 0;
 }
 .tile-content-image-idea:hover { background-position: bottom; }
-.tile-content-image-testimonial {
-  .tile-content-image;
-  background: url('../images/tiles/tile-testimonial-hover.png') 0 0;
-}
-.tile-content-image-testimonial:hover { background-position: bottom; }
+
 .tile-content-image-supplier {
   .tile-content-image;
-  background: url('../images/tiles/tile-supplier-hover.png') 0 0;
+  background: url('../images/tiles/tile-supplier-hover.jpg') 0 0;
 }
 .tile-content-image-supplier:hover { background-position: bottom; }
 .tile-content-image-jobs {
   .tile-content-image;
-  background: url('../images/tiles/tile-jobs-hover.png') 0 0;
+  background: url('../images/tiles/tile-jobs-hover.jpg') 0 0;
 }
 .tile-content-image-jobs:hover { background-position: bottom; }
 .tile-content-image-team {
   .tile-content-image;
-  background: url('../images/tiles/tile-team-hover.png') 0 0;
+  background: url('../images/tiles/tile-team-hover.jpg') 0 0;
 }
 .tile-content-image-team:hover { background-position: bottom; }
 
@@ -102,11 +98,15 @@ url:			http://holis-market.at
 /*** HOLISPEDIA PAGE ***/
 .holispedia {
   width: 240px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .holispedia-arrow {
   width: 40px;
   padding-top: 180px;
+  img {
+    cursor: pointer;
+  }
 }
 .holispedia-img {
   .center;
@@ -124,8 +124,37 @@ url:			http://holis-market.at
 .holispedia-subtext {}
 
 .holispedia-carousel{
-    width: 720px;
+  width: 720px;
+  margin-left: 40px;
 }
+
+/*** IDEA PAGE ***/
+.idea {
+  .center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.idea-image {
+  width: 200px;
+}
+.idea-text {
+  .left;
+  width: 430px;
+}
+.idea-img {
+  .center;
+  background: url('../images/bg/circle-white.png');
+  width: 200px;
+  height: 200px;
+}
+.idea-title {
+  .bold;
+  .serif;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 
 /*** TEAM PAGE ***/
 .team-pic {
@@ -189,57 +218,57 @@ url:			http://holis-market.at
 }
 .member-belinda {
   .member;
-  background: url('../images/pic/belinda-small-hover.png') 0 0;
+  background: url('../images/pic/team/belinda-small-hover.png') 0 0;
 }
 .member-belinda-single {
   .member;
   .c-normal;
-  background: url('../images/pic/belinda-small-hover.png') 0 0;
+  background: url('../images/pic/team/belinda-small-hover.png') 0 0;
 }
 .member-sarah {
   .member;
-  background: url('../images/pic/sarah-small-hover.png') 0 0;
+  background: url('../images/pic/team/sarah-small-hover.png') 0 0;
 }
 .member-sarah-single {
   .member;
   .c-normal;
-  background: url('../images/pic/sarah-small-hover.png') 0 0;
+  background: url('../images/pic/team/sarah-small-hover.png') 0 0;
 }
 .member-bernhard {
   .member;
-  background: url('../images/pic/bernhard-small-hover.png') 0 0;
+  background: url('../images/pic/team/bernhard-small-hover.png') 0 0;
 }
 .member-bernhard-single {
   .member;
   .c-normal;
-  background: url('../images/pic/bernhard-small-hover.png') 0 0;
+  background: url('../images/pic/team/bernhard-small-hover.png') 0 0;
 }
 .member-franz {
   .member;
-  background: url('../images/pic/franz-small-hover.png') 0 0;
+  background: url('../images/pic/team/franz-small-hover.png') 0 0;
 }
 .member-franz-single {
   .member;
   .c-normal;
-  background: url('../images/pic/franz-small-hover.png') 0 0;
+  background: url('../images/pic/team/franz-small-hover.png') 0 0;
 }
 .member-sabrina {
   .member;
-  background: url('../images/pic/sabrina-small-hover.png') 0 0;
+  background: url('../images/pic/team/sabrina-small-hover.png') 0 0;
 }
 .member-sabrina-single {
   .member;
   .c-normal;
-  background: url('../images/pic/sabrina-small-hover.png') 0 0;
+  background: url('../images/pic/team/sabrina-small-hover.png') 0 0;
 }
 .member-sonja {
   .member;
-  background: url('../images/pic/sonja-small-hover.png') 0 0;
+  background: url('../images/pic/team/sonja-small-hover.png') 0 0;
 }
 .member-sonja-single {
   .member;
   .c-normal;
-  background: url('../images/pic/sonja-small.png') 0 0;
+  background: url('../images/pic/team/sonja-small.png') 0 0;
 }
 .member-belinda:hover { background-position: bottom; }
 .member-sonja:hover { background-position: bottom;}
@@ -327,6 +356,7 @@ url:			http://holis-market.at
 .testimonial-gruenzweil { .testimonial; background: url('../images/pic/testimonials/gruenzweil-hover.png') 0 0; }
 .testimonial-kivrak { .testimonial; background: url('../images/pic/testimonials/kivrak-hover.png') 0 0; }
 .testimonial-kollmann { .testimonial; background: url('../images/pic/testimonials/kollmann-hover.png') 0 0; }
+.testimonial-kroiss { .testimonial; background: url('../images/pic/testimonials/kroiss-hover.png') 0 0; }
 .testimonial-lehner { .testimonial; background: url('../images/pic/testimonials/lehner-hover.png') 0 0; }
 .testimonial-leplay{ .testimonial; background: url('../images/pic/testimonials/leplay-hover.png') 0 0; }
 .testimonial-mayr { .testimonial; background: url('../images/pic/testimonials/mayr-hover.png') 0 0; }
@@ -357,6 +387,7 @@ url:			http://holis-market.at
 .testimonial-gruenzweil:hover { background-position: bottom; }
 .testimonial-kivrak:hover { background-position: bottom; }
 .testimonial-kollmann:hover { background-position: bottom; }
+.testimonial-kroiss:hover { background-position: bottom; }
 .testimonial-lehner:hover { background-position: bottom; }
 .testimonial-leplay:hover { background-position: bottom; }
 .testimonial-mayr:hover { background-position: bottom; }

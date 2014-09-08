@@ -6,8 +6,7 @@
 		$routeProvider
 
 		.when('/', { templateUrl : 'pages/home.html' })
-		.when('/news', { templateUrl : 'pages/news.html' })
-		.when('/article', { templateUrl : 'pages/article.html' })
+		.when('/news', { templateUrl : 'pages/news.php' })
 		.when('/team', { templateUrl : 'pages/team.html' })
 		.when('/faq', { templateUrl : 'pages/faq.html' })
 		.when('/partner', { templateUrl : 'pages/partner.html' })
@@ -41,6 +40,7 @@
 		.when('/testimonial-gruenzweil', { templateUrl : 'pages/testimonials/testimonial-gruenzweil.html' })
 		.when('/testimonial-kivrak', { templateUrl : 'pages/testimonials/testimonial-kivrak.html' })
 		.when('/testimonial-kollmann', { templateUrl : 'pages/testimonials/testimonial-kollmann.html' })
+		.when('/testimonial-kroiss', { templateUrl : 'pages/testimonials/testimonial-kroiss.html' })
 		.when('/testimonial-lehner', { templateUrl : 'pages/testimonials/testimonial-lehner.html' })
 		.when('/testimonial-leplay', { templateUrl : 'pages/testimonials/testimonial-leplay.html' })
 		.when('/testimonial-mayr', { templateUrl : 'pages/testimonials/testimonial-mayr.html' })
@@ -62,7 +62,7 @@
 
 		;
 		// use the HTML5 History API
-		//$locationProvider.html5Mode(true);
+		// $locationProvider.html5Mode(true);
 	});
 
 	holisApp.run(['$rootScope', function($rootScope){

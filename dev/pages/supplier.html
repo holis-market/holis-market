@@ -29,33 +29,33 @@
 	</div> 
 	<div class="content-main">
 		<div class="left" style="padding:left:100px;padding-right:100px;">
-			<div class="h5 serif">Du findets holis toll und willst Lebensmittelpartner von uns werden?</div>
+			<div class="h5 serif">Du findest holis toll und willst Lebensmittelpartner von uns werden?</div>
 			<br>
 			Dann schick' uns einfach deine Daten und wir melden uns bei dir :)
 			<br><br>
 			<div class="metro">
-				<form>
+				<form id="form-supplier" action="./php/add_partner.php" method="post">
 					<fieldset>
 						<div class="input-control" data-role="input-control" style="width:200px;" >
-							<input type="text" placeholder="Name"></input>
+							<input type="text" name="NAME" placeholder="Name"></input>
 						</div>
 						<div class="input-control" data-role="input-control" style="width:200px;" >
-							<input type="text" placeholder="E-Mail Adresse"></input>
+							<input type="text" name="EMAIL" placeholder="E-Mail Adresse"></input>
 						</div>
 						<div class="input-control" data-role="input-control" style="width:200px;" >
-							<input type="text" placeholder="Telefonnummer"></input>
+							<input type="text" name="PHONENUMBER" placeholder="Telefonnummer"></input>
 						</div>
 						<br><br><br>
 						<div class="input-control" data-role="input-control" style="width:605px;" >
-							<input type="text" placeholder="Welche Lebensmittel willst du uns anbieten?"></input>
+							<input type="text" name="WHAT" placeholder="Welche Lebensmittel willst du uns anbieten?"></input>
 						</div>
 						<br><br>
 						<div class="input-control" data-role="input-control" style="width:605px;" >
-							<input type="text" placeholder="Was ist so besonders an deinen Lebensmitteln?"></input>
+							<input type="text" name="WHY" placeholder="Was ist so besonders an deinen Lebensmitteln?"></input>
 						</div>
 						<br><br>
 						<div class="input-control" data-role="input-control" style="width:605px;" >
-							<input type="text" placeholder="Woher kommen die Lebensmittel?"></input>
+							<input type="text" name="WHERE" placeholder="Woher kommen die Lebensmittel?"></input>
 						</div>
 						<br><br>
 						<div>
@@ -70,3 +70,28 @@
 	</div>
 	<div class="content-line-grey-down"></div>
 </div>
+
+<script>
+//callback handler for form submit
+$("#form-supplier").submit(function(e)
+{
+    var postData = $(this).serializeArray();
+    var formURL = $(this).attr("action");
+    $.ajax(
+    {
+        url : formURL,
+        type: "POST",
+        data : postData,
+        success:function(data, textStatus, jqXHR) 
+        {
+            toastr.success('Vielen Dank für dein Interesse! Wir werden uns in Kürze bei dir melden.');
+        },
+        error: function(jqXHR, textStatus, errorThrown) 
+        {
+            toastr.error('Leider hat es ein Problem bei der Verarbeitung deiner Anfrage gegeben, bitte versuche es später noch einmal.');   
+        }
+    });
+    e.preventDefault(); //STOP default action
+    e.unbind(); //unbind. to stop multiple form submit.
+});
+</script>
