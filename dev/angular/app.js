@@ -70,7 +70,6 @@
 		function isHomepage(current){
 			try{
 			    return current.$$route.originalPath == "/" || current.$$route.originalPath == "";
-			    $(".fancybox").fancybox();
 			}
 			catch(err){
 				return false;
