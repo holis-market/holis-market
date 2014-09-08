@@ -84,7 +84,7 @@ $(document).ready( function () {
 				?>
 			</div>
 		</div>
-		<div class="content-line-grey-down"></div>
 	</div>
+	<div class="content-line-grey-down"></div>
 </div>
 

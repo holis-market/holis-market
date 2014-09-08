@@ -40,6 +40,7 @@
 		.when('/testimonial-gruenzweil', { templateUrl : 'pages/testimonials/testimonial-gruenzweil.html' })
 		.when('/testimonial-kivrak', { templateUrl : 'pages/testimonials/testimonial-kivrak.html' })
 		.when('/testimonial-kollmann', { templateUrl : 'pages/testimonials/testimonial-kollmann.html' })
+		.when('/testimonial-kroiss', { templateUrl : 'pages/testimonials/testimonial-kroiss.html' })
 		.when('/testimonial-lehner', { templateUrl : 'pages/testimonials/testimonial-lehner.html' })
 		.when('/testimonial-leplay', { templateUrl : 'pages/testimonials/testimonial-leplay.html' })
 		.when('/testimonial-mayr', { templateUrl : 'pages/testimonials/testimonial-mayr.html' })
