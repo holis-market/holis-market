@@ -7,6 +7,8 @@ Clear Fix Hack										> http://css-tricks.com/snippets/css/clear-fix
 Google Analytics									> https://www.google.com/analytics/web/?et&authuser=0#management/Settings/a53949357w86762086p90035085/%3Fm.page%3DTrackingCode/
 SMACSS												> https://smacss.com/book/type-module
 Facebook Preview Meta Options						> https://developers.facebook.com/docs/opengraph/using-objects
+													> http://blog.fanpagekarma.com/2013/10/14/grosse-vorschaubilder-bei-facebook-links-gehts/?lang=de
+													
 
 TODOs
 * radienter farbverlauf bei grauen hintergründen, css3?
