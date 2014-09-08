@@ -6,18 +6,18 @@ CSS Image Filters 									> http://html5-demos.appspot.com/static/css/filters/i
 Clear Fix Hack										> http://css-tricks.com/snippets/css/clear-fix
 Google Analytics									> https://www.google.com/analytics/web/?et&authuser=0#management/Settings/a53949357w86762086p90035085/%3Fm.page%3DTrackingCode/
 SMACSS												> https://smacss.com/book/type-module
-
+Facebook Preview Meta Options						> https://developers.facebook.com/docs/opengraph/using-objects
 
 TODOs
-* page idee
-* font corbel?
 * radienter farbverlauf bei grauen hintergründen, css3?
-* live tiles (wechselnde bilder), jquery?
 * förderer (hans neuburger, iris mayr, umut kivrak, manfred ninaus, toby, wolfgang lehner, heinz hochstetter, achleitner, christoph außerwöger, gernot zwingler...)
 * texte auslagern, properties file
 * captcha für formulare (gemüse/frucht einblenden und texteingange mit antwort)
 * inputfelder zu textarea machen (damit mehr platz zum schreiben)
 * prozesse classic/convenience/comfort unter detailansicht bei 1,2 oder 3
+* impressum
+* kontakt
+* news auf startseite?
 
 LINKS
 - wir
@@ -37,7 +37,7 @@ LINKS
 -- holispedia
 -- holis box
 
-- mach micht
+- mach mit
 -- testimonails
 -- jobs
 -- partner (=lieferanten)
