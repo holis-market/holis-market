@@ -2,6 +2,7 @@ Place text over images on hover without js			> http://geekgirllife.com/place-tex
 Pure CSS Image Hover 								> http://kyleschaeffer.com/development/pure-css-image-hover/
 Metro UI CSS / Live Tiles 							> http://metroui.org.ua/tiles.html
 Fancybox: enlarging images in Window 				> http://fancyapps.com/fancybox/
+Lightbox: enlarging images in Window				> http://www.html-seminar.de/bildergalerie-mit-lightbox.htm
 CSS Image Filters 									> http://html5-demos.appspot.com/static/css/filters/index.html (does not work in FF & IE)
 Clear Fix Hack										> http://css-tricks.com/snippets/css/clear-fix
 Google Analytics									> https://www.google.com/analytics/web/?et&authuser=0#management/Settings/a53949357w86762086p90035085/%3Fm.page%3DTrackingCode/
@@ -9,6 +10,10 @@ SMACSS												> https://smacss.com/book/type-module
 Facebook Preview Meta Options						> https://developers.facebook.com/docs/opengraph/using-objects
 													> http://blog.fanpagekarma.com/2013/10/14/grosse-vorschaubilder-bei-facebook-links-gehts/?lang=de
 Facebook Social Plugin								> https://developers.facebook.com/docs/plugins/like-box-for-pages
+Page Speed und Fehlerbehebung						> https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fholis-market.at%2F&tab=desktop
+Page Speed (Google + Yahoo)							> http://gtmetrix.com
+Add browser caching and expiration dat				> http://fortheloveofseo.com/blog/performance/leverage-browser-caching-how-to-add-expires-headers/
+Web Fonts											> http://www.fontsquirrel.com/
 													
 
 TODOs

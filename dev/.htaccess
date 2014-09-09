@@ -9,3 +9,15 @@ RewriteRule ^(.+)$ - [S=1]
 
 # otherwise, serve your index.html app
 RewriteRule ^(.+)$ /holis/index.html
+
+# add browser caching
+<IfModule mod_expires.c>
+# enable expirations
+ExpiresActive On
+# favicon
+ExpiresByType image/x-icon "access plus 1 year"
+# images
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+</IfModule>
