@@ -1,2 +1,0 @@
-- http://wicky.nillia.ms/headroom.js/
-- http://mean.io/#!/
