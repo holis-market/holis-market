@@ -28,6 +28,7 @@
 		.when('/team-franz', { templateUrl : 'pages/team/team-franz.html' })
 		.when('/team-bernhard', { templateUrl : 'pages/team/team-bernhard.html' })
 		.when('/team-sabrina', { templateUrl : 'pages/team/team-sabrina.html' })
+		.when('/team-sarahw', { templateUrl : 'pages/team/team-sarahw.html' })
 		
 		.when('/testimonial-altmanninger', { templateUrl : 'pages/testimonials/testimonial-altmanninger.html' })
 		.when('/testimonial-arzberger', { templateUrl : 'pages/testimonials/testimonial-arzberger.html' })

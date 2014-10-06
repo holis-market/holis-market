@@ -15,10 +15,11 @@ Page Speed und Fehlerbehebung						> https://developers.google.com/speed/pagespe
 Page Speed (Google + Yahoo)							> http://gtmetrix.com
 Add browser caching and expiration dat				> http://fortheloveofseo.com/blog/performance/leverage-browser-caching-how-to-add-expires-headers/
 Web Fonts											> http://www.fontsquirrel.com/
-
-Google Indixierung									> http://de.wikihow.com/Eine-Webseite-von-Google-indizieren-lassen
+Google Indexierung Dashboard						> https://www.google.com/webmasters/tools/
+													> http://de.wikihow.com/Eine-Webseite-von-Google-indizieren-lassen
 													> http://www.google.at/intl/de/insidesearch/howsearchworks/crawling-indexing.html
 													> https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?hl=de
+
 													
 FRAMEWORKS
 headroom (invisble header on scroll)				> http://wicky.nillia.ms/headroom.js/
@@ -35,6 +36,8 @@ TODOs
 * impressum
 * kontakt
 * news auf startseite?
+* lupe für vergrößerung der fotos (team / testimonials)
+* anzeige von verschiedenen testimonial größen (klein, mittel, groß - via css, float und width)
 
 LINKS
 - wir

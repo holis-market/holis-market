@@ -166,7 +166,7 @@ url:			http://holis-market.at
 
 /*** TEAM PAGE ***/
 .team-pic {
-  width: 260px;
+  .c-pointer; 
   margin: 20px;
 }
 .team-desc {
@@ -218,72 +218,40 @@ url:			http://holis-market.at
   width: 30%;
   margin-top:20px;
 }
-.member {
-  display: block;
+.member-team-image {
+  position: relative;
   width: 260px;
   height: 260px;
-  text-indent: -99999px;
 }
-.member-belinda {
-  .member;
-  background: url('../images/pic/team/belinda-small-hover.png') 0 0;
+.member-team-image img {
+  max-width: 100%;
+  max-height: 100%;
 }
-.member-belinda-single {
-  .member;
-  .c-normal;
-  background: url('../images/pic/team/belinda-small-hover.png') 0 0;
+.member-team-image:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0; 
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.4);
 }
-.member-sarah {
-  .member;
-  background: url('../images/pic/team/sarah-small-hover.png') 0 0;
+.member-team-caption {
+  .hide;
+  .center;
+  width: 260px;
+  margin-top: -150px;
+  position: absolute;
+  z-index: 10;
 }
-.member-sarah-single {
-  .member;
-  .c-normal;
-  background: url('../images/pic/team/sarah-small-hover.png') 0 0;
+.member-team-title {
+  .bold;
+  font-size: 40px;
 }
-.member-bernhard {
-  .member;
-  background: url('../images/pic/team/bernhard-small-hover.png') 0 0;
+.member-team-subtitle {
+  .fg-white;
+  font-size: 28px;
 }
-.member-bernhard-single {
-  .member;
-  .c-normal;
-  background: url('../images/pic/team/bernhard-small-hover.png') 0 0;
-}
-.member-franz {
-  .member;
-  background: url('../images/pic/team/franz-small-hover.png') 0 0;
-}
-.member-franz-single {
-  .member;
-  .c-normal;
-  background: url('../images/pic/team/franz-small-hover.png') 0 0;
-}
-.member-sabrina {
-  .member;
-  background: url('../images/pic/team/sabrina-small-hover.png') 0 0;
-}
-.member-sabrina-single {
-  .member;
-  .c-normal;
-  background: url('../images/pic/team/sabrina-small-hover.png') 0 0;
-}
-.member-sonja {
-  .member;
-  background: url('../images/pic/team/sonja-small-hover.png') 0 0;
-}
-.member-sonja-single {
-  .member;
-  .c-normal;
-  background: url('../images/pic/team/sonja-small.png') 0 0;
-}
-.member-belinda:hover { background-position: bottom; }
-.member-sonja:hover { background-position: bottom;}
-.member-sabrina:hover { background-position: bottom;}
-.member-franz:hover { background-position: bottom; }
-.member-bernhard:hover { background-position: bottom; }
-.member-sarah:hover { background-position: bottom; }
 
 /*** TESTIMONIAL PAGE ***/
 .testimonial-pic {
