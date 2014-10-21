@@ -167,7 +167,6 @@ url:			http://holis-market.at
 /*** TEAM PAGE ***/
 .team-pic {
   .c-pointer; 
-  margin: 20px;
 }
 .team-desc {
   .bg-white;
@@ -216,24 +215,26 @@ url:			http://holis-market.at
 .team-navi {
   .center-div;
   width: 30%;
-  margin-top:20px;
+  margin-top: 20px;
 }
 .member-team-image {
   position: relative;
   width: 260px;
   height: 260px;
 }
+.member-team-image-s {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
 .member-team-image img {
   max-width: 100%;
   max-height: 100%;
 }
-.member-team-image:hover:after {
+.member-team-image:hover:after, .member-team-image-s:hover:after{
   content: "";
   position: absolute;
-  top: 0;
-  left: 0; 
-  bottom: 0;
-  right: 0;
+  top: 0; left: 0; bottom: 0; right: 0;
   background-color: rgba(0,0,0,0.4);
 }
 .member-team-caption {
@@ -241,6 +242,14 @@ url:			http://holis-market.at
   .center;
   width: 260px;
   margin-top: -150px;
+  position: absolute;
+  z-index: 10;
+}
+.member-team-caption-s {
+  .hide;
+  .center;
+  width: 200px;
+  margin-top: -110px;
   position: absolute;
   z-index: 10;
 }

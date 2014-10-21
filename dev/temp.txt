@@ -2,8 +2,6 @@ WEB DEVELOPER TOOLS
 Place text over images on hover without js			> http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/
 Pure CSS Image Hover 								> http://kyleschaeffer.com/development/pure-css-image-hover/
 Metro UI CSS / Live Tiles 							> http://metroui.org.ua/tiles.html
-Fancybox: enlarging images in Window 				> http://fancyapps.com/fancybox/
-Lightbox: enlarging images in Window				> http://www.html-seminar.de/bildergalerie-mit-lightbox.htm
 CSS Image Filters 									> http://html5-demos.appspot.com/static/css/filters/index.html (does not work in FF & IE)
 Clear Fix Hack										> http://css-tricks.com/snippets/css/clear-fix
 Google Analytics									> https://www.google.com/analytics/web/?et&authuser=0#management/Settings/a53949357w86762086p90035085/%3Fm.page%3DTrackingCode/
@@ -24,6 +22,8 @@ Google Indexierung Dashboard						> https://www.google.com/webmasters/tools/
 FRAMEWORKS
 headroom (invisble header on scroll)				> http://wicky.nillia.ms/headroom.js/
 mean web stack										> http://mean.io/#!/
+jquery progressive expander							> http://webcloud.se/jQuery-Collapse/
+lightbox: enlarging images in window				> http://www.html-seminar.de/bildergalerie-mit-lightbox.htm
 													
 
 TODOs
