@@ -17,15 +17,24 @@ Google Indexierung Dashboard						> https://www.google.com/webmasters/tools/
 													> http://de.wikihow.com/Eine-Webseite-von-Google-indizieren-lassen
 													> http://www.google.at/intl/de/insidesearch/howsearchworks/crawling-indexing.html
 													> https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?hl=de
-
-													
+Reverse IP Domain Check (Nachbarschaftscheck)		> http://www.yougetsignal.com/tools/web-sites-on-web-server/
+Google Snippet Preview								> http://www.seomofo.com/snippet-optimizer.html
+								
 FRAMEWORKS
 headroom (invisble header on scroll)				> http://wicky.nillia.ms/headroom.js/
 mean web stack										> http://mean.io/#!/
 jquery progressive expander							> http://webcloud.se/jQuery-Collapse/
 lightbox: enlarging images in window				> http://www.html-seminar.de/bildergalerie-mit-lightbox.htm
 													
-
+CSS TRICKS
+vertical align middle 1								> https://mathiasbynens.be/demo/center-vertically-inside-float
+vertical align middle 2								> http://www.joocom.de/blog/css-tipps-tricks-vertikal-zentrieren/
+													
+													
+IMPORTANT
+Die folgende Code-Zeile in den Header einfügen, bei Update via FTP
+<base href="/" />
+													
 TODOs
 * radienter farbverlauf bei grauen hintergründen, css3?
 * förderer (hans neuburger, iris mayr, umut kivrak, manfred ninaus, toby, wolfgang lehner, heinz hochstetter, achleitner, christoph außerwöger, gernot zwingler...)

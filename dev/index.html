@@ -5,45 +5,30 @@
 
 <head>
   <!-- META -->
-  <meta property="og:image" content="http://holis-market.at/images/logo/fb.jpg"></meta><!-- facebook preview for sharing -->
-  <meta property="og:site_name" content="holis market"></meta><!-- facebook preview for sharing -->
-  <meta property="og:title" content="Der Markt mit Mehrwert"></meta><!-- facebook preview for sharing -->
-  <meta property="og:url" content="http://holis-market.at"></meta><!-- facebook preview for sharing -->
+  <meta property="og:image" content="http://holis-market.at/images/logo/fb.jpg"><!-- facebook preview for sharing -->
+  <meta property="og:site_name" content="holis market"><!-- facebook preview for sharing -->
+  <meta property="og:title" content="Der Markt mit Mehrwert"><!-- facebook preview for sharing -->
+  <meta property="og:url" content="http://holis-market.at"><!-- facebook preview for sharing -->
   <meta property="fb:admins" content="797534040275046"><!-- facebook preview for sharing -->
   <meta property="og:type" content="article"><!-- facebook preview for sharing -->
   <meta property="article:publisher" content="https://www.facebook.com/HolisMarket"><!-- facebook preview for sharing -->
-  
-  <meta name="description" content="holis market, Der Lebensmittelmarkt mit Mehrwert, Ernährungsberatung, Bestellung nach Rezept"></meta>
-  <meta name="robots" content="index"></meta>
-  <meta name="Author" content="holis market"></meta>
-  <meta name="Keywords" content="ernährung, nutrition, biologisch, organic, lebensmittel, groceries, zero waste, müll, waste, essen, food, service, rezepte, recipe, beratung, consulting, markt, market"></meta>
+  <meta name="description" content="Der holis market ist der On- und Offline-Marktplatz für gesunde und biologische Lebensmittel ohne Verpackung und Verschwendung, sowie für deine individuelle Ernährung.">
+  <meta name="robots" content="index">
+  <meta charset="UTF-8">
   <!-- TITLE -->
   <title>holis market</title>
-  
-
-  <!-- SCRIPT FILES -->
-  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
-  <script src="./js/jquery.easing-1.3.min.js"></script>
-  <script src="./js/jquery-ui.min.onlywidget.js"></script>
-  <script src="./js/jquery.collapse.js"></script>
-  <script src="./angular/app.js"></script>
-  <script src="./js/lightbox.min.js"></script>
-  <script src="./js/jq.carousel.js"></script>
-  <script src="./js/toastr.min.js"></script>
 
   <!-- STYLES -->
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/lightbox.css"  />
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/style.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/metro-bootstrap.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="./styles/toastr.min.css"/>
-
-  <!-- WEB FONTS -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/toastr.min.css" />
   
-  <!-- SCRIPTS -->
-  <script> /* google analytics */
+  <!-- WEB FONTS (ICONS) -->
+  <link rel="stylesheet" type="text/css" media="screen" href="./fonts/icons/css/font-awesome.min.css" />
+  
+  <!-- GOOGLE ANALYTICS -->
+  <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -51,332 +36,67 @@
 	ga('create', 'UA-53949357-1', 'auto');
 	ga('send', 'pageview');
   </script>
-  <script> /* hide and show elements */
-	function toggle_visibility(id) {
-		var e = document.getElementById(id);
-		if(e.style.display == 'block') {
-			e.style.display = 'none';
-		} else {
-			e.style.display = 'block';
-		}
-	}
-  </script>
-  <script> /*show element */
-	function show(id) {
-		var e = document.getElementById(id);
-		e.style.display = 'block';
-	}
-  </script>
-  <script> /*hide element */
-	function hide(id) {
-		var e = document.getElementById(id);
-		e.style.display = 'none';
-	}
-  </script>
-  <script>
-    toastr.options = {
-      "positionClass": "toast-bottom-full-width"
-    }
-
-    function sendMailchimpForm($form) {
-        $.ajax({
-            type: $form.attr('method'),
-            url: $form.attr('action'),
-            data: $form.serialize(),
-            cache       : false,
-            dataType    : 'json',
-            contentType: "application/json; charset=utf-8",
-            error       : function(err) { toastr.error('Leider war die Anmeldung zum Newsletter nicht erfolgreich, bitte versuche es später noch einmal.'); },
-            success     : function(data) {
-              console.log(data);
-                if (data.result != "success") {
-                    toastr.warning('Kann es sein dass du schon registriert bist?');
-                } else {
-                    toastr.success('Vielen Dank für deine Registrierung beim holis-Newsletter! Eine holistische Mail sollte schon in deinem Posteingang gelandet sein.');
-                }
-            }
-        });
-    }
-  </script>
-
+  
+  <base href="/" />
+  
 </head>
 
 <!-- define angular controller -->
 <body>
 	<div id="fb-root"></div>
-	<script>
-	(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-	</script>
-	<div class="hide"><!-- preload impages -->
-		<img src="./images/logo/white.png" width="1" height="1" />
-		<img src="./images/logo/dark.png" width="1" height="1" />
-		
-		<img src="./images/bg/arrow-green.png" width="1" height="1" />
-		<img src="./images/bg/arrow-grey.png" width="1" height="1" />
-		<img src="./images/bg/arrow-yellow.png" width="1" height="1" />
-		<img src="./images/bg/arrow-orange.png" width="1" height="1" />
-		<img src="./images/bg/circle-white.png" width="1" height="1" />
-		<img src="./images/bg/trennlinie_welle_gelb_down.png" width="1" height="1" />
-		<img src="./images/bg/trennlinie_welle_gruen_down.png" width="1" height="1" />
-		<img src="./images/bg/trennlinie_welle_grau_down.png" width="1" height="1" />
-		<img src="./images/bg/trennlinie_welle_hellgrau_down.png" width="1" height="1" />
-		<img src="./images/bg/trennlinie_welle_orange_down.png" width="1" height="1" />
-		<img src="./images/bg/trennlinie_welle_gelb_up.png" width="1" height="1" />
-		<img src="./images/bg/trennlinie_welle_gruen_up.png" width="1" height="1" />
-		<img src="./images/bg/trennlinie_welle_grau_up.png" width="1" height="1" />
-		<img src="./images/bg/trennlinie_welle_hellgrau_up.png" width="1" height="1" />
-		<img src="./images/bg/trennlinie_welle_orange_up.png" width="1" height="1" />
-		
-		<img src="./images/icon/arrow-grey-left-small.png" width="1" height="1" />
-		<img src="./images/icon/arrow-grey-right-small.png" width="1" height="1" />
-		<img src="./images/icon/arrow-white-left.png" width="1" height="1" />
-		<img src="./images/icon/arrow-white-right.png" width="1" height="1" />
-		<img src="./images/icon/icon-lock-white.png" width="1" height="1" />
-		<img src="./images/icon/bubble-black.png" width="1" height="1" />
-		
-		<img src="./images/tiles/tile-idea-hover.jpg" width="1" height="1" />
-		<img src="./images/tiles/tile-jobs-hover.jpg" width="1" height="1" />
-		<img src="./images/tiles/tile-supplier-hover.jpg" width="1" height="1" />
-		<img src="./images/tiles/tile-team-hover.jpg" width="1" height="1" />
-		<img src="./images/tiles/tile-lemons-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-chillis-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-garlic-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-peaches-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-pears-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-starfruits-locked.png" width="1" height="1" />
-		
-		<img src="./images/scribbles/scribble-app.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-beratung.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-bio.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-box.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-classic.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-comfort.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-convenience.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-fairtrade.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-foodblogger.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-gravitybin.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-kreislauf.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-lieferung.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-mehrweg.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-regio.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-saison.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-slowfood.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-transparenz.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-waste.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-zerowaste.png" width="1" height="1" />
-		<img src="./images/scribbles/scribble-zerowaste2.png" width="1" height="1" />
-		
-		<img src="./images/pic/team/belinda-small-hover.png" width="1" height="1" />
-		<img src="./images/pic/team/franz-small-hover.png" width="1" height="1" />
-		<img src="./images/pic/team/sonja-small-hover.png" width="1" height="1" />
-		<img src="./images/pic/team/sabrina-small-hover.png" width="1" height="1" />
-		<img src="./images/pic/team/sarah-small-hover.png" width="1" height="1" />
-		<img src="./images/pic/team/bernhard-small-hover.png" width="1" height="1" />
-		<img src="./images/pic/team/belinda-small.png" width="1" height="1" />
-		<img src="./images/pic/team/franz-small.png" width="1" height="1" />
-		<img src="./images/pic/team/sonja-small.png" width="1" height="1" />
-		<img src="./images/pic/team/sabrina-small.png" width="1" height="1" />
-		<img src="./images/pic/team/sarah-small.png" width="1" height="1" />
-		<img src="./images/pic/team/bernhard-small.png" width="1" height="1" />
-		
-		<img src="./images/tiles/tile-chillis-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-garlic-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-peaches-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-pears-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-nuts-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-starfruits-locked.png" width="1" height="1" />
-		<img src="./images/tiles/tile-idea-hover.jpg" width="1" height="1" />
-		<img src="./images/tiles/tile-jobs-hover.jpg" width="1" height="1" />
-		<img src="./images/tiles/tile-supplier-hover.jpg" width="1" height="1" />
-		<img src="./images/tiles/tile-team-hover.jpg" width="1" height="1" />
-		
-		<img src="./images/pic/testimonials/altmanninger-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/altmanninger-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/altmanninger-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-altmanninger.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/arzberger-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/arzberger-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/arzberger-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-arzberger.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/brandstaetter-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/brandstaetter-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/brandstaetter-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-brandstaetter.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/diephuis-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/diephuis-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/diephuis-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-diephuis.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/eipeltauer-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/eipeltauer-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/eipeltauer-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-eipeltauer.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/frischefritzen-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/frischefritzen-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/frischefritzen-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-frischefritzen.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/furdea-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/furdea-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/furdea-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-furdea.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/gin-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/gin-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/gin-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-gin.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/greil-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/greil-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/greil-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-greil.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/gruenzweil-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/gruenzweil-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/gruenzweil-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-gruenzweil.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/kivrak-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/kivrak-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/kivrak-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-kivrak.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/kollmann-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/kollmann-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/kollmann-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-kollmann.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/kroiss-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/kroiss-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/kroiss-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-kroiss.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/lehner-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/lehner-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/lehner-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-lehner.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/leplay-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/leplay-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/leplay-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-leplay.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/mayr-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/mayr-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/mayr-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-mayr.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/moser-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/moser-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/moser-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-moser.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/ortner-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/ortner-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/ortner-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-ortner.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/rabitsch-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/rabitsch-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/rabitsch-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-rabitsch.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/rainer-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/rainer-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/rainer-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-rainer.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/reisinger-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/reisinger-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/reisinger-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-reisinger.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/reitmayr-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/reitmayr-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/reitmayr-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-reitmayr.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/rosemanna-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/rosemanna-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/rosemanna-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-rosemanna.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/rosemanne-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/rosemanne-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/rosemanne-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-rosemanne.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/roth-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/roth-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/roth-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-roth.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/schauerhofer-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/schauerhofer-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/schauerhofer-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-schauerhofer.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/schilcher-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/schilcher-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/schilcher-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-schilcher.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/schuetzenhofer-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/schuetzenhofer-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/schuetzenhofer-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-schuetzenhofer.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/seyr-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/seyr-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/seyr-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-seyr.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/shenti-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/shenti-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/shenti-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-shenti.jpg" width="1" height="1" />
-		<img src="./images/pic/testimonials/stitz-hover.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/stitz-small.png" width="1" height="1" />
-		<img src="./images/pic/testimonials/stitz-large.png" width="1" height="1" />
-		<img src="./images/live-tiles/live-stitz.jpg" width="1" height="1" />
-		
-		<img src="./images/live-tiles/live-hover.jpg" width="1" height="1" />
-	</div>
-
-  <div id="page-container">
+	<div id="page-container">
     <div id="header">
-      <div ng-if="startpage" id="startpage-logo-container">
-        <a href="#">
-			<img src="./images/logo/dark.png" alt="holis market [logo]"/>
-		</a>
-      </div>
-      <div ng-if="!startpage" class="group">
-        <div class="navbar">
-          <ul>
-            <li>
-              <a id="nav-we" href="#team">Wir</a>
-              <ul>
-                <li class="first-child"><a href="#team">Team</a></li>
-				<!--<li><a href="#partner">Partner</a></li>-->
-                <li><a href="#idea">Idee</a></li>
-                <!--<li><a href="#vision">Vision</a></li>-->
-                <!--<li><a href="#way">Weg</a></li>-->
-				<li><a href="#faq">Blöde Fragen</a></li>
-              </ul>
-            </li>
-            <li>
-              <a id="nav-offer" href="#12or3">bieten</a>
-              <ul>
-                <li><a href="#12or3">1,2 oder 3</a></li>
-                <!--<li><a href="#services">Services</a></li>-->
-              </ul>
-            </li>
-            <li>
-              <a id="nav-special" href="#holispedia">Besonderes</a>
-              <ul>
-                <li><a href="#holispedia">holispedia</a></li>
-				<!--<li><a href="#box">holis Box</a></li>-->
-              </ul>
-            </li>
-            <li>
-              <a id="nav-join" href="#testimonials">mach mit!</a>
-              <ul>
-                <!--<li><a href="#myholis">Mein holis</a></li>-->
-                <li><a href="#testimonials">Testimonials</a></li>
-				<li><a href="#jobs">Jobs</a></li>
-                <li><a href="#supplier">Partner</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div id="navbar-logo-container">
+		<div ng-if="startpage" id="startpage-logo-container">
 			<a href="#">
 				<img src="./images/logo/dark.png" alt="holis market [logo]"/>
 			</a>
-        </div>
-      </div>
-      <div style="clear:both;"/>
+		</div>
+		<div ng-if="!startpage" class="group">
+			<div class="navbar">
+			  <ul>
+				<li>
+				  <a id="nav-we" href="#team">Wir</a>
+				  <ul>
+					<li class="first-child"><a href="#team">Team</a></li>
+					<!--<li><a href="#partner">Partner</a></li>-->
+					<li><a href="#idea">Idee</a></li>
+					<!--<li><a href="#vision">Vision</a></li>-->
+					<!--<li><a href="#way">Weg</a></li>-->
+					<li><a href="#faq">Blöde Fragen</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a id="nav-offer" href="#12or3">bieten</a>
+				  <ul>
+					<li><a href="#12or3">1,2 oder 3</a></li>
+					<!--<li><a href="#services">Services</a></li>-->
+				  </ul>
+				</li>
+				<li>
+				  <a id="nav-special" href="#holispedia">Besonderes</a>
+				  <ul>
+					<li><a href="#holispedia">holispedia</a></li>
+					<!--<li><a href="#box">holis Box</a></li>-->
+				  </ul>
+				</li>
+				<li>
+				  <a id="nav-join" href="#testimonials">mach mit!</a>
+				  <ul>
+					<!--<li><a href="#myholis">Mein holis</a></li>-->
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#jobs">Jobs</a></li>
+					<li><a href="#supplier">Partner</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+			<div id="navbar-logo-container">
+				<a href="#">
+					<img src="./images/logo/dark.png" alt="holis market [logo]"/>
+				</a>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
     </div>
     <div id="content-container">
       <!-- angular templating -->
@@ -438,5 +158,18 @@
       </div>
     </div>
   </div>
+  
+    <!-- SCRIPT FILES -->
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+  <script src="./js/jquery.easing-1.3.min.js"></script>
+  <script src="./js/jquery-ui.min.onlywidget.js"></script>
+  <script src="./js/jquery.collapse.js"></script>
+  <script src="./angular/app.js"></script>
+  <script src="./js/lightbox.min.js"></script>
+  <script src="./js/jq.carousel.js"></script>
+  <script src="./js/toastr.min.js"></script>
+  <script src="./js/custom.js"></script>
 </body>
 </html>
