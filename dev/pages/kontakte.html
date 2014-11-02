@@ -1,0 +1,406 @@
+﻿<div>
+	<div class="content-line-grey"></div>
+	<div class="content-header">
+		<div class="h1">Kontaktdatenbank</div>
+	</div>
+	<div class="metro content-breadcrumb">
+		<nav class="breadcrumbs">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li class="active"><a>Kontaktdatenbank</a></li>
+			</ul>
+		</nav>
+	</div> 
+	<div class="content-main">
+		<div class="left metro">
+			<form id="form-job" action="./php/add_job.php" method="post">
+				<fieldset>
+					<div class="form-group">
+						<div class="form-label">ID</div>
+						<div class="fullwidth">
+							<div class="input-control fleft form-space" data-role="input-control" style="width:260px;">
+								<input type="text" name="EMAIL" placeholder="E-Mail Adresse"></input>
+							</div>
+							<div class="input-control fleft form-space-double" data-role="input-control" style="width:260px;">
+								<input type="text" name="CONTACTBY" placeholder="Kontakt von"></input>
+								<div class="form-infobox">z.B. Max Mustermann</div>
+							</div>
+							<div class="fleft">
+								<input class="bg-green" type="submit" value="Kontakt hinzufügen"></input>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-label">Interesse an Newsletter</div>
+						<div class="onoffswitch">
+							<input type="checkbox" name="NEWSLETTER" class="onoffswitch-checkbox" id="switchNewsletter">
+							<label class="onoffswitch-label" for="switchNewsletter">
+								<span class="onoffswitch-inner"></span>
+								<span class="onoffswitch-switch"></span>
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-label">Interesse an Mitarbeit</div>
+						<div class="onoffswitch">
+							<input type="checkbox" name="WORK" class="onoffswitch-checkbox" id="switchWork">
+							<label class="onoffswitch-label" for="switchWork">
+								<span class="onoffswitch-inner"></span>
+								<span class="onoffswitch-switch"></span>
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-label">Interesse an Berichterstattung (Presse)</div>
+						<div class="onoffswitch">
+							<input type="checkbox" name="MEDIA" class="onoffswitch-checkbox" id="switchMedia">
+							<label class="onoffswitch-label" for="switchMedia">
+								<span class="onoffswitch-inner"></span>
+								<span class="onoffswitch-switch"></span>
+							</label>
+						</div>
+					</div>
+					<hr class="form-divider">
+					<div class="form-group">
+						<div class="fullwidth">
+							<div class="fleft form-space-double">
+								<div class="form-label">Männlich</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="MALE" class="onoffswitch-checkbox" id="switchMale">
+									<label class="onoffswitch-label" for="switchMale">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="fleft form-space-double">
+								<div class="form-label">Weiblich</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="FEMALE" class="onoffswitch-checkbox" id="switchFemale">
+									<label class="onoffswitch-label" for="switchFemale">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="fleft form-space-double">
+								<div class="form-label">Familie</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="FAMILY" class="onoffswitch-checkbox" id="switchFamily">
+									<label class="onoffswitch-label" for="switchFamily">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="fleft form-space-double">
+								<div class="form-label">Organisation</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="ORGANIZATION" class="onoffswitch-checkbox" id="switchOrganization">
+									<label class="onoffswitch-label" for="switchOrganization">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-label">Name</div>
+						<div class="fullwidth">
+							<div class="input-control fleft form-space" data-role="input-control" style="width:260px;">
+								<input type="text" name="FIRSTNAME" placeholder="Vorname"></input>
+							</div>
+							<div class="input-control fleft" data-role="input-control" style="width:260px;">
+								<input type="text" name="LASTNAME" placeholder="Nachname"></input>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-label">Adresse</div>
+						<div class="fullwidth">
+							<div class="input-control fleft form-space" data-role="input-control" style="width:260px;">
+								<input type="text" name="STREET" placeholder="Straße und Hausnummer"></input>
+							</div>
+							<div class="input-control fleft form-space" data-role="input-control" style="width:260px;">
+								<input type="text" name="POSTCODE" placeholder="Postleitzahl"></input>
+							</div>
+							<div class="input-control fleft" data-role="input-control" style="width:260px;">
+								<input type="text" name="LOCATION" placeholder="Ort"></input>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-label">Kontakt</div>
+						<div class="fullwidth">
+							<div class="input-control fleft form-space" data-role="input-control" style="width:522px;">
+								<input type="text" name="WEB" placeholder="Webadresse"></input>
+								<div class="form-infobox">z.B. http://www.url.at</div>
+							</div>
+							<div class="input-control fleft" data-role="input-control" style="width:260px;">
+								<input type="text" name="PHONE" placeholder="Telefon"></input>
+								<div class="form-infobox">z.B. +43 650 1234567</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-label">Geburtsdatum</div>
+						<div class="fullwidth">
+							<div class="input-control fleft form-space" data-role="input-control" style="width:260px;">
+								<input type="text" name="BIRTHDATE" placeholder="Geburtsdatum oder Geburtsjahr"></input>
+								<div class="form-infobox">z.B. 01.01.1950</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<hr class="form-divider">
+					<div class="form-group">
+						<div class="form-label">Organisation</div>
+						<div class="fullwidth">
+							<div class="input-control fleft form-space" data-role="input-control" style="width:260px;">
+								<input type="text" name="ORGANIZATION" placeholder="Name der Organisation"></input>
+							</div>
+							<div class="input-control fleft" data-role="input-control" style="width:260px;">
+								<input type="text" name="JOB" placeholder="Job-Bezeichung oder Funktion"></input>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-label">Kompetenzen</div>
+						<div class="fullwidth">
+							<div class="input fleft" data-role="input-control" style="width:784px;height:100%">
+								<textarea type="textarea" name="SKILLS" placeholder="Wissen, Fähigkeiten und/oder Erfahrungen" style="height:60px;"></textarea>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-label">Anmerkungen</div>
+						<div class="fullwidth">
+							<div class="input fleft" data-role="input-control" style="width:784px;height:100%">
+								<textarea type="textarea" name="SKILLS" placeholder="Sonstige Anmerkungen" style="height:60px;"></textarea>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<hr class="form-divider">
+					<div class="form-group">
+						<div class="fullwidth">
+							<div class="fleft form-space-double">
+								<div class="form-label">Gründer</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="FOUNDER" class="onoffswitch-checkbox" id="switchFounder" onclick="validateFounder()">
+									<label class="onoffswitch-label" for="switchFounder">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="fleft form-space-double">
+								<div class="form-label">Team</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="TEAM" class="onoffswitch-checkbox" id="switchTeam" onclick="validateTeam()">
+									<label class="onoffswitch-label" for="switchTeam">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="fleft form-space-double">
+								<div class="form-label">Unterstützer</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="SUPPORTER" class="onoffswitch-checkbox" id="switchSupporter" onclick="validateSupporter()">
+									<label class="onoffswitch-label" for="switchSupporter">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="fleft form-space-double">
+								<div class="form-label">Mentor</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="MENTOR" class="onoffswitch-checkbox" id="switchMentor" onclick="validateMentor()">
+									<label class="onoffswitch-label" for="switchMentor">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="fleft form-space-double">
+								<div class="form-label">Investor</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="MENTOR" class="onoffswitch-checkbox" id="switchInvestor" onclick="validateInvestor()">
+									<label class="onoffswitch-label" for="switchInvestor">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="fleft form-space-double">
+								<div class="form-label">LM-Partner</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="SUPPLIER" class="onoffswitch-checkbox" id="switchSupplier" onclick="validateSupplier()">
+									<label class="onoffswitch-label" for="switchSupplier">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="fleft form-space-double">
+								<div class="form-label">Berater</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="CONSULTANT" class="onoffswitch-checkbox" id="switchConsulting" onclick="validateConsulting()">
+									<label class="onoffswitch-label" for="switchConsulting">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="fleft">
+								<div class="form-label">Blogger</div>
+								<div class="onoffswitch">
+									<input type="checkbox" name="BLOGGER" class="onoffswitch-checkbox" id="switchBlogger" onclick="validateBlogger()">
+									<label class="onoffswitch-label" for="switchBlogger">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>					
+					<div id="iamholis" class="form-group" style="display:none;">
+						<div class="form-label">Ich bin holis, weil...</div>
+						<div class="fullwidth">
+							<div class="input fleft" data-role="input-control" style="width:784px;height:100%">
+								<textarea type="textarea" name="IAMHOLIS" placeholder="Ich bin holis, weil..." style="height:60px;"></textarea>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div id="whyholis" class="form-group" style="display:none;">
+						<div class="form-label">Ich finde holis toll, weil...</div>
+						<div class="fullwidth">
+							<div class="input fleft" data-role="input-control" style="width:784px;height:100%">
+								<textarea type="textarea" name="WHYHOLIS" placeholder="Ich finde holis toll, weil..." style="height:60px;"></textarea>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div id="career" class="form-group" style="display:none;">
+						<div class="form-label">Mein Werdegang</div>
+						<div class="fullwidth">
+							<div class="input fleft" data-role="input-control" style="width:784px;height:100%">
+								<textarea type="textarea" name="CAREER" placeholder="Mein Werdegang" style="height:60px;"></textarea>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div id="products" class="form-group" style="display:none;">
+						<div class="form-label">Lebensmittel</div>
+						<div class="fullwidth">
+							<div class="input fleft" data-role="input-control" style="width:784px;height:100%">
+								<textarea type="textarea" name="PRODUCTS" placeholder="Ich biete folgende Lebensmittel..." style="height:60px;"></textarea>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div  id="investtype" class="form-group" style="display:none;">
+						<div class="form-label">Finanzierung</div>
+						<div class="fullwidth">
+							<div class="input fleft" data-role="input-control" style="width:784px;height:100%">
+								<textarea type="textarea" name="INVESTMENT" placeholder="Ich möchte holis so finanzieren..." style="height:60px;"></textarea>
+								<div class="form-infobox">z.B. Geldleihe, Kredit, Genusschein, Investition mit Gewinnbeteiligung, Crowdfunding, Einmaliger Zuschuss</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div id="investsum" class="form-group" style="display:none;">
+						<div class="form-label">Unterstüzungssumme</div>
+						<div class="fullwidth">
+							<div class="input-control fleft form-space" data-role="input-control" style="width:260px;">
+								<input type="text" name="SUM" placeholder="Geldsumme"></input>
+								<div class="form-infobox">z.B. 10.000,00</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div id="consultfocus" class="form-group" style="display:none;">
+						<div class="form-label">Beratungsschwerpunkt</div>
+						<div class="fullwidth">
+							<div class="input fleft" data-role="input-control" style="width:784px;height:100%">
+								<textarea type="textarea" name="CONSULTFOCUS" placeholder="Ich bin spezialisiert auf..." style="height:60px;"></textarea>
+								<div class="form-infobox">z.B. Diabetes, Sport, TCM, Senioren, etc.</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div id="blogfocus" class="form-group" style="display:none;">
+						<div class="form-label">Blogger-Schwerpunkt</div>
+						<div class="fullwidth">
+							<div class="input fleft" data-role="input-control" style="width:784px;height:100%">
+								<textarea type="textarea" name="BLOGFOCUS" placeholder="Ich bin spezialisiert auf..." style="height:60px;"></textarea>
+								<div class="form-infobox">z.B. Gesunde Rezepte, Vegan, etc.</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<br><br>
+					<div>
+						<div class="fleft form-space-double">
+							<input class="bg-green" type="submit" value="Kontakt hinzufügen"></input>
+						</div>
+						<div class="fleft form-space-double">
+							<input class="bg-green" type="submit" value="Formular leeren"></input>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div class="content-line-grey-down"></div>
+</div>
+
+<script>
+//callback handler for form submit and clear > TODO bernie
+
+	function validateFounder() {
+		if (document.getElementById('switchFounder').checked) { show('iamholis'); show('whyholis'); show('career');
+		} else { hide('iamholis'); hide('whyholis'); hide('career'); }
+	}
+	function validateTeam() {
+		if (document.getElementById('switchTeam').checked) { show('iamholis'); show('whyholis'); show('career');
+		} else { hide('iamholis'); hide('whyholis'); hide('career'); }
+	}
+	function validateSupporter() {
+		if (document.getElementById('switchSupporter').checked) { show('iamholis'); show('whyholis'); show('career');
+		} else { hide('iamholis'); hide('whyholis'); hide('career'); }
+	}
+	function validateMentor() {
+		if (document.getElementById('switchMentor').checked) { show('iamholis'); show('whyholis'); show('career');
+		} else { hide('iamholis'); hide('whyholis'); hide('career'); }
+	}
+	function validateInvestor() {
+		if (document.getElementById('switchInvestor').checked) { show('investtype'); show('investsum');
+		} else { hide('investtype'); hide('investsum'); }
+	}
+	function validateSupplier() {
+		if (document.getElementById('switchSupplier').checked) { show('products');
+		} else { hide('products'); }
+	}
+	function validateConsulting() {
+		if (document.getElementById('switchConsulting').checked) { show('consultfocus');
+		} else { hide('consultfocus'); }
+	}
+	function validateBlogger() {
+		if (document.getElementById('switchBlogger').checked) { show('blogfocus');
+		} else { hide('blogfocus'); }
+	}
+</script>

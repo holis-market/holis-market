@@ -21,6 +21,7 @@
 		.when('/testimonials', { templateUrl : 'pages/testimonials.html' })
 		.when('/supplier', { templateUrl : 'pages/supplier.html' })
 		.when('/jobs', { templateUrl : 'pages/jobs.html' })
+		.when('/kontakte', { templateUrl : 'pages/kontakte.html' })
 		
 		.when('/team-belinda', { templateUrl : 'pages/team/team-belinda.html' })
 		.when('/team-sarah', { templateUrl : 'pages/team/team-sarah.html' })

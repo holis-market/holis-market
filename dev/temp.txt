@@ -19,7 +19,11 @@ Google Indexierung Dashboard						> https://www.google.com/webmasters/tools/
 													> https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?hl=de
 Reverse IP Domain Check (Nachbarschaftscheck)		> http://www.yougetsignal.com/tools/web-sites-on-web-server/
 Google Snippet Preview								> http://www.seomofo.com/snippet-optimizer.html
-								
+W3C Validator										> http://validator.w3.org
+301 Weiterleitung									> http://www.sistrix.de/frag-sistrix/onpage-optimierung/http-statuscode/3xx-redirection/wie-erstelle-ich-eine-301-weiterleitung/
+URL Rewriting Apache (301)							> http://httpd.apache.org/docs/2.0/misc/rewriteguide.html
+
+	
 FRAMEWORKS
 headroom (invisble header on scroll)				> http://wicky.nillia.ms/headroom.js/
 mean web stack										> http://mean.io/#!/
