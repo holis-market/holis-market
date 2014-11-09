@@ -1,4 +1,11 @@
-﻿/* hide and show elements */
+﻿/* enable "title" tooltips http://jqueryui.com/tooltip */
+$(function() {
+	$( document ).tooltip({
+	track: true
+	});
+});
+
+/* hide and show elements */
 function toggle_visibility(id) {
 	var e = document.getElementById(id);
 	if(e.style.display == 'block') {
@@ -6,6 +13,44 @@ function toggle_visibility(id) {
 	} else {
 		e.style.display = 'block';
 	}
+}
+
+/* set member size */
+function show_size_small(id) {
+	var e_small = document.getElementById('size-small');
+	var e_medium = document.getElementById('size-medium');
+	var e_large = document.getElementById('size-large');
+	
+	e_small.className = 'holisversum-size-active';
+	e_medium.className = 'holisversum-size-inactive';
+	e_large.className = 'holisversum-size-inactive';
+	
+	var e = document.getElementById(id);
+	e.className = 'member-pic-small';
+}
+function show_size_medium(id) {
+	var e_small = document.getElementById('size-small');
+	var e_medium = document.getElementById('size-medium');
+	var e_large = document.getElementById('size-large');
+	
+	e_small.className = 'holisversum-size-inactive';
+	e_medium.className = 'holisversum-size-active';
+	e_large.className = 'holisversum-size-inactive';
+
+	var e = document.getElementById(id);	
+	e.className = 'member-pic-medium';
+}
+function show_size_large(id) {
+	var e_small = document.getElementById('size-small');
+	var e_medium = document.getElementById('size-medium');
+	var e_large = document.getElementById('size-large');
+	
+	e_small.className = 'holisversum-size-inactive';
+	e_medium.className = 'holisversum-size-inactive';
+	e_large.className = 'holisversum-size-active';
+	
+	var e = document.getElementById(id);
+	e.className = 'member-pic-large';
 }
 
 /* show element */

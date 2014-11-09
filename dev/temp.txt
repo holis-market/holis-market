@@ -1,45 +1,48 @@
-WEB DEVELOPER TOOLS
+#WEB DEVELOPER TOOLS
 Place text over images on hover without js			> http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/
 Pure CSS Image Hover 								> http://kyleschaeffer.com/development/pure-css-image-hover/
 Metro UI CSS / Live Tiles 							> http://metroui.org.ua/tiles.html
 CSS Image Filters 									> http://html5-demos.appspot.com/static/css/filters/index.html (does not work in FF & IE)
-Clear Fix Hack										> http://css-tricks.com/snippets/css/clear-fix
-Google Analytics									> https://www.google.com/analytics/web/?et&authuser=0#management/Settings/a53949357w86762086p90035085/%3Fm.page%3DTrackingCode/
 SMACSS												> https://smacss.com/book/type-module
-Facebook Preview Meta Options						> https://developers.facebook.com/docs/opengraph/using-objects
+Facebook Preview Meta Options						> https://developers.facebook.com/docs/opengraph/using-objects													
 													> http://blog.fanpagekarma.com/2013/10/14/grosse-vorschaubilder-bei-facebook-links-gehts/?lang=de
 Facebook Social Plugin								> https://developers.facebook.com/docs/plugins/like-box-for-pages
 Page Speed und Fehlerbehebung						> https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fholis-market.at%2F&tab=desktop
 Page Speed (Google + Yahoo)							> http://gtmetrix.com
-Add browser caching and expiration dat				> http://fortheloveofseo.com/blog/performance/leverage-browser-caching-how-to-add-expires-headers/
+Add browser caching and expiration datE				> http://fortheloveofseo.com/blog/performance/leverage-browser-caching-how-to-add-expires-headers/
 Web Fonts											> http://www.fontsquirrel.com/
-Google Indexierung Dashboard						> https://www.google.com/webmasters/tools/
-													> http://de.wikihow.com/Eine-Webseite-von-Google-indizieren-lassen
-													> http://www.google.at/intl/de/insidesearch/howsearchworks/crawling-indexing.html
-													> https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?hl=de
-Reverse IP Domain Check (Nachbarschaftscheck)		> http://www.yougetsignal.com/tools/web-sites-on-web-server/
-Google Snippet Preview								> http://www.seomofo.com/snippet-optimizer.html
 W3C Validator										> http://validator.w3.org
 301 Weiterleitung									> http://www.sistrix.de/frag-sistrix/onpage-optimierung/http-statuscode/3xx-redirection/wie-erstelle-ich-eine-301-weiterleitung/
 URL Rewriting Apache (301)							> http://httpd.apache.org/docs/2.0/misc/rewriteguide.html
 
-	
-FRAMEWORKS
+
+#SEO / ANALYTICS
+Google Analytics seher.franz@gmail.com				> https://www.google.com/analytics/web/?et&authuser=0#home/a53949357w86762086p90035085/
+Google Analytics holis-market@gmail.com				> https://www.google.com/analytics/web/?et&authuser=0#home/a56545497w90013789p93593441/
+Google Indexierung Dashboard						> https://www.google.com/webmasters/tools/
+													> http://de.wikihow.com/Eine-Webseite-von-Google-indizieren-lassen
+													> http://www.google.at/intl/de/insidesearch/howsearchworks/crawling-indexing.html
+													> https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?hl=de	
+Google Snippet Preview								> http://www.seomofo.com/snippet-optimizer.html
+Reverse IP Domain Check (Nachbarschaftscheck)		> http://www.yougetsignal.com/tools/web-sites-on-web-server/
+												
+#FRAMEWORKS
 headroom (invisble header on scroll)				> http://wicky.nillia.ms/headroom.js/
 mean web stack										> http://mean.io/#!/
 jquery progressive expander							> http://webcloud.se/jQuery-Collapse/
 lightbox: enlarging images in window				> http://www.html-seminar.de/bildergalerie-mit-lightbox.htm
+jquery: tooltips									> http://jqueryui.com/tooltip
 													
-CSS TRICKS
+#CSS TRICKS
 vertical align middle 1								> https://mathiasbynens.be/demo/center-vertically-inside-float
 vertical align middle 2								> http://www.joocom.de/blog/css-tipps-tricks-vertikal-zentrieren/
+Clear Fix Hack										> http://css-tricks.com/snippets/css/clear-fix												
 													
-													
-IMPORTANT
+#IMPORTANT
 Die folgende Code-Zeile in den Header einfügen, bei Update via FTP
 <base href="/" />
 													
-TODOs
+#TODOs
 * radienter farbverlauf bei grauen hintergründen, css3?
 * förderer (hans neuburger, iris mayr, umut kivrak, manfred ninaus, toby, wolfgang lehner, heinz hochstetter, achleitner, christoph außerwöger, gernot zwingler...)
 * texte auslagern, properties file
@@ -52,7 +55,7 @@ TODOs
 * lupe für vergrößerung der fotos (team / testimonials)
 * anzeige von verschiedenen testimonial größen (klein, mittel, groß - via css, float und width)
 
-LINKS
+#LINKS
 - wir
 -- news
 -- team

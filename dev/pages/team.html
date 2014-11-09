@@ -32,92 +32,110 @@
 			</ul>
 		</nav>
 	</div> 
+	<div class="holisversum-size">
+		<div class="form-label">Darstellungsgröße</div>
+		<table style="margin-left:290px;">
+			<tr>
+				<td style="vertical-align:bottom;">
+					<div id="size-small" class="holisversum-size-inactive" onclick="show_size_small('size')" title="Darstellung klein"></div>
+				</td>
+				<td style="vertical-align:bottom;">
+					<div id="size-medium" class="holisversum-size-active" onclick="show_size_medium('size')" title="Darstellung mittel"></div>
+				</td>
+				<td style="vertical-align:bottom;">
+					<div id="size-large" class="holisversum-size-inactive" onclick="show_size_large('size')" title="Darstellung groß"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
 	<div class="content-main">
-		<div class="member-pic-large c-pointer fleft bubble-right-top" onmouseover="show('member-sonja');return false;" onmouseout="hide('member-sonja');return false;">
-			<a href="#team-sonja">
-				<div class="member-image">
-					<img src="./images/pic/team/sonja-small.jpg">
-						<div id="member-sonja" class="member-caption">
-							<span class="member-title">Sonja</span><br><br>
-							<span class="member-subtitle">Ernährung</span>
-						</div>
-					</img>
-				</div>
-			</a>
+		<div id="size" class="member-pic-medium">
+			<div class="member-pic c-pointer fleft bubble-right-top" onmouseover="show('member-sonja');return false;" onmouseout="hide('member-sonja');return false;">
+				<a href="#gruenzweils">
+					<div class="member-image">
+						<img src="./images/pic/members/sonja-small.jpg" alt="holis market Team - Sonja Grünzweil - Ernährung und Beratung">
+							<div id="member-sonja" class="member-caption">
+								<span class="member-title">Sonja</span><br><br>
+								<span class="member-subtitle">Ernährung</span>
+							</div>
+						</img>
+					</div>
+				</a>
+			</div>
+			<div class="member-pic c-pointer fleft bubble-left-top" onmouseover="show('member-belinda');return false;" onmouseout="hide('member-belinda');return false;">
+				<a href="#swoboda">
+					<div class="member-image">
+						<img src="./images/pic/members/belinda-small.jpg" alt="holis market Team - Belinda Swoboda - Grafik und Design">
+							<div id="member-belinda" class="member-caption">
+								<span class="member-title">Belinda</span><br><br>
+								<span class="member-subtitle">Design</span>
+							</div>
+						</img>
+					</div>
+				</a>
+			</div>
+			<div class="member-pic c-pointer fleft bubble-left-top" onmouseover="show('member-sabrina');return false;" onmouseout="hide('member-sabrina');return false;">
+				<a href="#fleisch">
+					<div class="member-image">
+						<img src="./images/pic/members/sabrina-small.jpg" alt="holis market Team - Sabrina Fleisch - Kommunikation und Marketing">
+							<div id="member-sabrina" class="member-caption">
+								<span class="member-title">Sabrina</span><br><br>
+								<span class="member-subtitle">Kommunikation</span>
+							</div>
+						</img>
+					</div>
+				</a>
+			</div>
+			<div class="member-pic c-pointer fleft bubble-right-bottom" onmouseover="show('member-bernhard');return false;" onmouseout="hide('member-bernhard');return false;">
+				<a href="#mayrb">
+					<div class="member-image">
+						<img src="./images/pic/members/bernhard-small.jpg" alt="holis market Team - Bernhard Mayr - Web und Technologie">
+							<div id="member-bernhard" class="member-caption">
+								<span class="member-title">Bernhard</span><br><br>
+								<span class="member-subtitle">Technologie</span>
+							</div>
+						</img>
+					</div>
+				</a>
+			</div>
+			<div class="member-pic c-pointer fleft bubble-right-bottom" onmouseover="show('member-sarah');return false;" onmouseout="hide('member-sarah');return false;">
+				<a href="#holzer">
+					<div class="member-image">
+						<img src="./images/pic/members/sarah-small.jpg" alt="holis market Team - Sarah Holzer - Lebensmittel und Marketing">
+							<div id="member-sarah" class="member-caption">
+								<span class="member-title">Sarah H</span><br><br>
+								<span class="member-subtitle">Lebensmittel</span>
+							</div>
+						</img>
+					</div>
+				</a>
+			</div>
+			<div class="member-pic c-pointer fleft bubble-right-top" onmouseover="show('member-franz');return false;" onmouseout="hide('member-franz');return false;">
+				<a href="#seher">
+					<div class="member-image">
+						<img src="./images/pic/members/franz-small.jpg" alt="holis market Team - Franz Seher - Strategie und Finanzierung">
+							<div id="member-franz" class="member-caption">
+								<span class="member-title">Franz</span><br><br>
+								<span class="member-subtitle">Strategie</span>
+							</div>
+						</img>
+					</div>
+				</a>
+			</div>
+			<div class="member-pic fleft c-pointer bubble-right-top" onmouseover="show('member-sarahw');return false;" onmouseout="hide('member-sarahw');return false;">
+				<a href="#wagner">
+					<div class="member-image">
+						<img src="./images/pic/members/sarahw-small.jpg" alt="holis market Team - Sarah Wagner - Einkauf und Finanzen">
+							<div id="member-sarahw" class="member-caption">
+								<span class="member-title">Sarah W</span><br><br>
+								<span class="member-subtitle">Finanzen</span>
+							</div>
+						</img>
+					</div>
+				</a>
+			</div>
+			<div class="clear" />
 		</div>
-		<div class="member-pic-large c-pointer fleft bubble-left-top" onmouseover="show('member-belinda');return false;" onmouseout="hide('member-belinda');return false;">
-			<a href="#team-belinda">
-				<div class="member-image">
-					<img src="./images/pic/team/belinda-small.jpg">
-						<div id="member-belinda" class="member-caption">
-							<span class="member-title">Belinda</span><br><br>
-							<span class="member-subtitle">Design</span>
-						</div>
-					</img>
-				</div>
-			</a>
-		</div>
-		<div class="member-pic-large c-pointer fleft bubble-left-top" onmouseover="show('member-sabrina');return false;" onmouseout="hide('member-sabrina');return false;">
-			<a href="#team-sabrina">
-				<div class="member-image">
-					<img src="./images/pic/team/sabrina-small.jpg">
-						<div id="member-sabrina" class="member-caption">
-							<span class="member-title">Sabrina</span><br><br>
-							<span class="member-subtitle">Kommunikation</span>
-						</div>
-					</img>
-				</div>
-			</a>
-		</div>
-		<div class="member-pic-large c-pointer fleft bubble-right-bottom" onmouseover="show('member-bernhard');return false;" onmouseout="hide('member-bernhard');return false;">
-			<a href="#team-bernhard">
-				<div class="member-image">
-					<img src="./images/pic/team/bernhard-small.jpg">
-						<div id="member-bernhard" class="member-caption">
-							<span class="member-title">Bernhard</span><br><br>
-							<span class="member-subtitle">Technologie</span>
-						</div>
-					</img>
-				</div>
-			</a>
-		</div>
-		<div class="member-pic-large c-pointer fleft bubble-right-bottom" onmouseover="show('member-sarah');return false;" onmouseout="hide('member-sarah');return false;">
-			<a href="#team-sarah">
-				<div class="member-image">
-					<img src="./images/pic/team/sarah-small.jpg">
-						<div id="member-sarah" class="member-caption">
-							<span class="member-title">Sarah H</span><br><br>
-							<span class="member-subtitle">Lebensmittel</span>
-						</div>
-					</img>
-				</div>
-			</a>
-		</div>
-		<div class="member-pic-large c-pointer fleft bubble-right-top" onmouseover="show('member-franz');return false;" onmouseout="hide('member-franz');return false;">
-			<a href="#team-franz">
-				<div class="member-image">
-					<img src="./images/pic/team/franz-small.jpg">
-						<div id="member-franz" class="member-caption">
-							<span class="member-title">Franz</span><br><br>
-							<span class="member-subtitle">Strategie</span>
-						</div>
-					</img>
-				</div>
-			</a>
-		</div>
-		<div class="member-pic-large fleft c-pointer bubble-right-top" onmouseover="show('member-sarahw');return false;" onmouseout="hide('member-sarahw');return false;">
-			<a href="#team-sarahw">
-				<div class="member-image">
-					<img src="./images/pic/team/sarahw-small.jpg">
-						<div id="member-sarahw" class="member-caption">
-							<span class="member-title">Sarah W</span><br><br>
-							<span class="member-subtitle">Finanzen</span>
-						</div>
-					</img>
-				</div>
-			</a>
-		</div>
-		<div class="clear" />
 	</div>
 	<div class="content-line-grey-down"></div>
 </div>
