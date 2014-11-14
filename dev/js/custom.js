@@ -1,7 +1,7 @@
 ﻿/* enable "title" tooltips http://jqueryui.com/tooltip */
 $(function() {
 	$( document ).tooltip({
-	track: true
+	track: false
 	});
 });
 

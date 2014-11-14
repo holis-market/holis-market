@@ -32,6 +32,8 @@ mean web stack										> http://mean.io/#!/
 jquery progressive expander							> http://webcloud.se/jQuery-Collapse/
 lightbox: enlarging images in window				> http://www.html-seminar.de/bildergalerie-mit-lightbox.htm
 jquery: tooltips									> http://jqueryui.com/tooltip
+jquery: slider										> http://bxslider.com/examples
+jquery: countdown									> http://hilios.github.io/jQuery.countdown/
 													
 #CSS TRICKS
 vertical align middle 1								> https://mathiasbynens.be/demo/center-vertically-inside-float
@@ -41,41 +43,3 @@ Clear Fix Hack										> http://css-tricks.com/snippets/css/clear-fix
 #IMPORTANT
 Die folgende Code-Zeile in den Header einfügen, bei Update via FTP
 <base href="/" />
-													
-#TODOs
-* radienter farbverlauf bei grauen hintergründen, css3?
-* förderer (hans neuburger, iris mayr, umut kivrak, manfred ninaus, toby, wolfgang lehner, heinz hochstetter, achleitner, christoph außerwöger, gernot zwingler...)
-* texte auslagern, properties file
-* captcha für formulare (gemüse/frucht einblenden und texteingange mit antwort)
-* inputfelder zu textarea machen (damit mehr platz zum schreiben)
-* prozesse classic/convenience/comfort unter detailansicht bei 1,2 oder 3
-* impressum
-* kontakt
-* news auf startseite?
-* lupe für vergrößerung der fotos (team / testimonials)
-* anzeige von verschiedenen testimonial größen (klein, mittel, groß - via css, float und width)
-
-#LINKS
-- wir
--- news
--- team
--- idee 
--- vision
--- weg
--- förderer
--- blöde fragen (gibt es nicht) (=faqs)
-
-- bieten
--- 1,2 oder 3
--- service
-
-- besonderes
--- holispedia
--- holis box
-
-- mach mit
--- testimonails
--- jobs
--- partner (=lieferanten)
--- mein holis (check > classic/convenience/comfort)
--- holis test (wie holis bin ich)

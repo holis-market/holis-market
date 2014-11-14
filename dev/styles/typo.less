@@ -13,11 +13,15 @@ url:			http://holis-market.at
 body {
   .fg-black;
   .bg-white;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 0.8em;
+  line-height: 1em;
   font-weight: normal;
   font-style: normal;
   margin: 0 auto;
+}
+p {
+  .block;
+  line-height: 1.3em;
 }
 
 .uppercase {
@@ -41,43 +45,47 @@ body {
 .italic {
   font-style: italic;
 }
-.h1 {
+.h1 { /* Seitenüberschrift */
   .fg-greyheadline;
   .sans;
   .bold;
-  font-size: 36px;
+  font-size: 2.2em;
 }
 h1 { .h1; }
 
-.h5 {
+.h2 { /* Inhaltsüberschrift */
+  .fg-greyheadline;
+  .sans;
+  .bold;
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+h2 { .h2; }
+
+.h3 { /* Unterüberschrift */
+  .fg-black;
+  .sans;
+  .bold;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+h3 { .h3; }
+
+.h4 { /* Bildunterschrift */
   .fg-black;
   .bold;
-  font-size: 18px;
+  font-size: 0.8em;
 }
-h5 { .h5; }
-.h6 {
+h4 { .h4; }
+
+.h5 { /* Untertitel */
   .fg-black;
   .sans;
   .italic;
-  font-size: 14px;
+  font-size: 0.9em;
+}
+h5 { .h5; }
+	
+.h6 { /* noch offen */
 }
 h6 { .h6; }
-
-h2,h3,h4 {
-  .fg-black;
-  .sans;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.size-xxl {}
-.size-xl {}
-.size-l {}
-.size-m {}
-.size-s {}
-.size-xs {}
-
-
-
-
-	

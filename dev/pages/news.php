@@ -71,15 +71,15 @@ $(document).ready( function () {
 				<?php
 				$posts = get_posts('numberposts=10&order=ASC&orderby=post_title');
 				foreach ($posts as $post) : setup_postdata( $post ); ?>
-				<!--<?php the_date(); echo "<br />"; ?>-->
-				<div class="news-subheader">
-					<?php the_title(); ?>
-				</div>
-				<!--<?php the_excerpt(); ?>--> 
-				<div class="news-subsection">
-					<?php the_content(); ?>
-				</div>
-				<?php
+					<!--<?php the_date(); echo "<br />"; ?>-->
+					<div class="news-subheader">
+						<?php the_title(); ?>
+					</div>
+					<!--<?php the_excerpt(); ?>--> 
+					<div class="news-subsection">
+						<?php the_content(); ?>
+					</div>
+					<?php
 				endforeach;
 				?>
 			</div>

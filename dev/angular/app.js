@@ -29,6 +29,7 @@
 		.when('/supporter', { templateUrl : 'pages/supporter.html' })
 		
 		.when('/altmanninger', { templateUrl : 'pages/members/altmanninger.html' })
+		.when('/anschober', { templateUrl : 'pages/members/anschober.html' })
 		.when('/arzberger', { templateUrl : 'pages/members/arzberger.html' })
 		.when('/brandstaetter', { templateUrl : 'pages/members/brandstaetter.html' })
 		.when('/brandstetter', { templateUrl : 'pages/members/brandstetter.html' })
@@ -44,6 +45,7 @@
 		.when('/gruenzweils', { templateUrl : 'pages/members/gruenzweils.html' })
 		.when('/gutenbrunner', { templateUrl : 'pages/members/gutenbrunner.html' })
 		.when('/holzer', { templateUrl : 'pages/members/holzer.html' })
+		.when('/hornbogner', { templateUrl : 'pages/members/hornbogner.html' })
 		.when('/kivrak', { templateUrl : 'pages/members/kivrak.html' })
 		.when('/kollmann', { templateUrl : 'pages/members/kollmann.html' })
 		.when('/kroiss', { templateUrl : 'pages/members/kroiss.html' })
