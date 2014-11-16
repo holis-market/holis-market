@@ -105,7 +105,10 @@ url:			http://holis-market.at
 }
 .content-line {
   height: 5px;
-  width: 960px;
+}
+.content-line-black {
+  .content-line;
+  background: url('../images/bg/trennlinie_welle_black_up.png');
 }
 .content-line-grey {
   .content-line;
@@ -122,6 +125,10 @@ url:			http://holis-market.at
 .content-line-green {
   .content-line;
   background: url('../images/bg/trennlinie_welle_gruen_up.png');
+}
+.content-line-black-down {
+  .content-line;
+  background: url('../images/bg/trennlinie_welle_black_down.png');
 }
 .content-line-grey-down {
   .content-line;
@@ -168,19 +175,28 @@ url:			http://holis-market.at
 }
 
 /*** FOOTER ***/
+.footer-startpage {
+  margin-left: 80px;
+  margin-right: 100px;
+}
+#footer {
+  .bg-black;
+  .fg-grey;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 80px;
+  padding-right: 40px;
+}
 #footer{
-    margin-top: 50px;
     *{
         line-height: 126%;
     }
-    .links>ul>li{
-        width: 20%;
+    .links > ul > li{
+        width: 33%;
         float: left;
-        *{
-            font-size: 0.95em;
-        }
-        a{
-            .fg-greydark;
+        a {
+			font-size: 0.95em;
+            color: @cGrey;
             text-decoration: none;
         }
     }
@@ -188,7 +204,42 @@ url:			http://holis-market.at
         margin-top: 10px;
         margin-bottom: 3px;
     }
-    div, li{
-        text-align: center;
-    }
+}
+#footer .footer-header {
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  border-bottom: 1px solid @cGreyDark;
+  padding-bottom: 15px;
+}
+#footer .footer-left a:hover {
+  .fg-green;
+}
+#footer .footer-middle a:hover {
+  .fg-orange;
+}
+#footer .footer-right a:hover {
+  .fg-yellow;
+}
+#footer .circle {
+  .center;
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius:20px;
+  font-size: 1.8em;
+  color: @cWhite;
+  background: @cGrey;
+  padding-top: 4px;
+}
+#footer .circle:hover {
+  .bg-yellow;
+}
+#copyright {
+  .bg-black;
+  .fg-grey;
+  .center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 0.8em;
 }

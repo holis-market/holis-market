@@ -6,7 +6,8 @@
 		$routeProvider
 
 		.when('/', { templateUrl : 'pages/home.html' })
-		.when('/news', { templateUrl : 'pages/news.php' })
+		/*.when('/news', { templateUrl : 'pages/news.php' })*/
+		.when('/news', { templateUrl : 'pages/news.html' })
 		.when('/team', { templateUrl : 'pages/team.html' })
 		.when('/faq', { templateUrl : 'pages/faq.html' })
 		.when('/partner', { templateUrl : 'pages/partner.html' })

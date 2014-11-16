@@ -9,30 +9,62 @@ url:			http://holis-market.at
 
 /*** NEWS PAGE ***/
 .news {
-  width: 400px;
+  .bg-white;
   .left;
+  border: 1px solid @cGreyLight;
+  padding: 40px;
+  width: 600px;
+  margin-left: 100px;
+}
+.news-entry {}
+.news-divider {
+  background: url('../images/icon/icon-bubbles.png') no-repeat top center;
+  height: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.news-meta {
+  margin-bottom: 4px;
+  margin-top: -2px;
+}
+.news-date {
+  .bold;
+  .fg-orange;
+  font-size: 0.9em;
+}
+.news-author {
+  .bold;
+  .fg-orange;
+  font-size: 0.9em;
 }
 .news-section {
-  .bold;
-  margin-top: 5px;
   margin-bottom: 20px;
 }
 .news-header {
-  .h5;
-  .serif;
-  margin-bottom: 20px;
+  .fg-green;
 }
 .news-subheader {
-  .h6;
-  .serif;
+  text-transform: uppercase;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .news-subsection {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .news-summary {
   .bold;
+  margin-bottom: 20px;
+}
+.news-link {
+  margin-bottom: 4px;
+}
+.news-board {}
+.news-quote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.news-pic {
+  margin-bottom: 20px;
 }
 
 /*** HOME PAGE ***/

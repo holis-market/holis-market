@@ -14,6 +14,37 @@ ul.list {
   margin-left: 20px;
 }
 
+/*** QUOTES ***/
+blockquote {
+  .italic;
+  .block;
+  font-family: Georgia, serif;
+  font-size: 1.1em;
+  width: 100%;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+}
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 5em;
+  position: absolute;
+  left: -8px;
+  top: -20px;
+  color: #7a7a7a;
+}
+blockquote cite {
+  color: #999999;
+  font-size: 0.9em;
+  display: block;
+  margin-top: 5px;
+}
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
 /*** ARROWS ***/
 .arrows {
   display: block;

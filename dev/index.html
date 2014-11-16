@@ -13,6 +13,7 @@
   <meta property="og:type" content="article"><!-- facebook preview for sharing -->
   <meta property="article:publisher" content="https://www.facebook.com/HolisMarket"><!-- facebook preview for sharing -->
   <meta name="description" content="Der holis market ist der On- und Offline-Marktplatz für gesunde und biologische Lebensmittel ohne Verpackung und Verschwendung, sowie für deine individuelle Ernährung.">
+  <meta name="p:domain_verify" content="2ec209e4109d35fd2dc06fb6c6ca1a8c"/><!-- pinterest verification -->
   <meta name="robots" content="index">
   <meta charset="UTF-8">
   <!-- TITLE -->
@@ -25,7 +26,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/iconFont.min.css" /><!-- icon font -->
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/toastr.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/jquery-ui.min.css" />
-   <link rel="stylesheet" type="text/css" media="screen" href="./styles/jquery.bxslider.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/jquery.bxslider.css" />
     
   <!-- GOOGLE ANALYTICS -->
   <script>
@@ -45,7 +46,7 @@
 	*/
 </script>
   
-  <!--<base href="/" />  show only if update via FTP to server -->
+  <base href="/" /><!--  show only if update via FTP to server -->
   
 </head>
 
@@ -117,66 +118,95 @@
       <!-- this is where content will be injected -->
       <div ng-view></div>
     </div>
-    <div id="footer">
-      <div class="links group">
-        <ul>
-          <li>
-            <div class="bold">Wir</div>
-            <ul>
-              <li><a href="#team">Team</a></li>
-			  <li><a href="#idea">Idee</a></li>
-			  <li><a href="#mentor">Mentoren</a></li>
-			  <li><a href="#supporter">Unterstützer</a></li>
-			  <!--<li><a href="#investor">Investoren</a></li>
-			  <!--<li><a href="#partner">Partner</a></li>
-			  <!--<li><a href="#consultant">Ernährungsexperten</a></li>
-			  <!--<li><a href="#blogger">Rezeptdesigner</a></li>
-			  <!--<li><a href="#partner">Partner</a></li>-->
-              <!--<li><a href="#vision">Vision</a></li>-->
-              <!--<li><a href="#way">Weg</a></li>-->
-			  <li><a href="#faq">Blöde Fragen</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="bold">bieten</div>
-            <ul>
-			  <li><a href="#12or3">1,2 oder 3</a></li>
-              <!--<li><a href="#services">services</a></li>-->
-            </ul>
-          </li>
-          <li>
-            <div class="bold">Besonderes</div>
-            <ul>
-              <li><a href="#holispedia">holispedia</a></li>
-			  <!--<li><a href="#box">holis box</a></li>-->
-            </ul>
-          </li>
-          <li>
-            <div class="bold">mach mit!</div>
-            <ul>
-              <!--<li><a href="#myholis">mein holis</a></li>-->
-              <li><a href="#testimonials">Testimonials</a></li>
-			   <li><a href="#jobs">Jobs</a></li>
-              <li><a href="#supplier">Partner</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="bold">Sitemap</div>
-            <ul>
-              <li><a href="#news">News</a></li>
-              <!--<li><a href="#contact">Kontakt</a></li>-->
-              <!--<li><a href="#imprint">Impressum</a></li>-->
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="social">
-        <a class="link fg-green bold" href="https://www.facebook.com/HolisMarket" target="_blank">facebook</a>
-      </div>
-      <div id="copyright" class="bold">
-        &copy; 2014 by holis
-      </div>
-    </div>
+	<br/><br/>
+	<div ng-if="startpage" class="footer-startpage">
+		<div class="content-line-black"></div>
+		<div id="footer">
+		  <div class="links group">
+			<ul>
+			  <li>
+				<div class="footer-header">holis - Der Markt</div>
+				<ul class="footer-left">
+				  <li><a href="#team">Team</a></li>
+				  <li><a href="#idea">Idee</a></li>
+				  <li><a href="#holispedia">Features</a></li>
+				  <li><a href="#12or3">Produkte</a></li>
+				  <li><a href="#mentor">Mentoren</a></li>
+				  <li><a href="#supporter">Unterstützer</a></li>
+				</ul>
+			  </li>
+			  <li>
+				<div class="footer-header">holis - Informativ</div>
+				<ul class="footer-middle">
+				  <li><a href="#news">News</a></li>
+				  <li><a href="#faq">Häufige Fragen</a></li>
+				  <li><a href="#contact">Kontakt</a></li>
+				  <li><a href="#impressum">Impressum</a></li>
+				  <!--<li><a href="#sitemap">Sitemap</a></li>-->
+				</ul>
+			  </li>
+			  <li>
+				<div class="footer-header">holis - Interaktiv</div>
+				<ul class="footer-right">
+				  <li><a href="#testimonials">Werde Testimonial</a></li>
+				  <li><a href="#jobs">Werde Teil von holis</a></li>
+				  <li><a href="#supplier">Werde Lebensmittelpartner</a></li>
+				  <li>
+					<a href="https://www.facebook.com/holismarket" target="_blank"><i class="circle icon-facebook"></i></a>
+					<a href="https://www.pinterest.com/holismarket" target="_blank"><i class="circle icon-pinterest"></i></a>
+					<a href="http://instagram.com/holismarket" target="_blank"><i class="circle icon-instagram"></i></a>
+				  </li>
+				</ul>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+		<div id="copyright">&copy; 2014 holis market | <a class="link fg-green" href="mailto:holis@holis-market.at">holis@holis-market.at</a></div>
+	</div>
+	<div ng-if="!startpage" style="margin-top:-30px;">
+		<div class="content-line-black" style="width:960px;"></div>
+		<div id="footer">
+		  <div class="links group">
+			<ul>
+			  <li>
+				<div class="footer-header">holis - Der Markt</div>
+				<ul class="footer-left">
+				  <li><a href="#team">Team</a></li>
+				  <li><a href="#idea">Idee</a></li>
+				  <li><a href="#holispedia">Features</a></li>
+				  <li><a href="#12or3">Produkte</a></li>
+				  <li><a href="#mentor">Mentoren</a></li>
+				  <li><a href="#supporter">Unterstützer</a></li>
+				</ul>
+			  </li>
+			  <li>
+				<div class="footer-header">holis - Informativ</div>
+				<ul class="footer-middle">
+				  <li><a href="#news">News</a></li>
+				  <li><a href="#faq">Häufige Fragen</a></li>
+				  <li><a href="#contact">Kontakt</a></li>
+				  <li><a href="#impressum">Impressum</a></li>
+				  <!--<li><a href="#sitemap">Sitemap</a></li>-->
+				</ul>
+			  </li>
+			  <li>
+				<div class="footer-header">holis - Interaktiv</div>
+				<ul class="footer-right">
+				  <li><a href="#testimonials">Werde Testimonial</a></li>
+				  <li><a href="#jobs">Werde Teil von holis</a></li>
+				  <li><a href="#supplier">Werde Lebensmittelpartner</a></li>
+				  <li>
+					<a href="https://www.facebook.com/holismarket" target="_blank"><i class="circle icon-facebook"></i></a>
+					<a href="https://www.pinterest.com/holismarket" target="_blank"><i class="circle icon-pinterest"></i></a>
+					<a href="http://instagram.com/holismarket" target="_blank"><i class="circle icon-instagram"></i></a>
+				  </li>
+				</ul>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+		<div id="copyright">&copy; 2014 holis market | <a class="link fg-green" href="mailto:holis@holis-market.at">holis@holis-market.at</a></div>
+	</div>
   </div>
   
   <!-- SCRIPT FILES -->
@@ -190,6 +220,7 @@
   <script src="./js/jquery.bxslider.min.js"></script>
   <script src="./angular/app.js"></script>
   <script src="./js/lightbox.min.js"></script>
+  <script src="//assets.pinterest.com/js/pinit.js" async></script>
   <script src="./js/jq.carousel.js"></script>
   <script src="./js/toastr.min.js"></script>
   <script src="./js/custom.js"></script>
