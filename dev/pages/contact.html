@@ -1,0 +1,61 @@
+﻿<script src="./js/gmaps.js"></script>
+
+<div>
+	<div class="content-line-grey"></div>
+	<div class="content-header">
+		<h1>Kontakt</h1>
+	</div>
+	<div class="metro content-breadcrumb">
+		<nav class="breadcrumbs">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li class="active"><a>Kontakt</a></li>
+			</ul>
+		</nav>
+	</div> 
+	<div class="content-main">
+		<div class="left">		
+			<h2>Postadresse</h2>
+			<p>Franz Seher<br/>
+			Heindlstraße 23<br/>
+			4040 Linz</p>
+			<br/>
+			<h2>Office</h2>
+			<p><a class="link fg-green" href="http://axis-linz.at/" target="_blank">AXIS Coworking Loft</a><br/>
+			Tabakfabrik Linz<br/>
+			Peter Behrens Platz 2<br/>
+			4040 Linz<br/>
+			+43 650 42 00 304<br/>
+			<a class="link fg-green" href="mailto:holis@holis-market.at">holis(at)holis-market.at</a></p>
+			<div class="contact"><div id="map"></div></div>
+		</div>
+	</div>
+	<div class="content-line-grey-down"></div>
+</div>
+
+<script>
+// gmap > http://hpneo.github.io/gmaps
+var map;
+$(document).ready(function(){
+var map = new GMaps({
+    div: '#map',
+    lat: 48.31276,
+    lng: 14.298690
+});
+map.addMarker({
+  lat: 48.312747,
+  lng: 14.298690,
+  title: 'AXIS Coworking Loft, Tabakfabrik Linz, Peter Behrens Platz 2, 4040 Linz'
+});
+}); 
+
+//expand/collapes
+new jQueryCollapse($("#show-hide"), {
+  open: function() {
+	this.slideDown(150);
+  },
+  close: function() {
+	this.slideUp(150);
+  }
+});
+</script>

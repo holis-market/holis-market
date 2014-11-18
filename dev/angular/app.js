@@ -28,6 +28,8 @@
 		.when('/holisversum', { templateUrl : 'pages/holisversum.html' })
 		.when('/mentor', { templateUrl : 'pages/mentor.html' })
 		.when('/supporter', { templateUrl : 'pages/supporter.html' })
+		.when('/kontakt', { templateUrl : 'pages/contact.html' })
+		
 		
 		.when('/altmanninger', { templateUrl : 'pages/members/altmanninger.html' })
 		.when('/anschober', { templateUrl : 'pages/members/anschober.html' })

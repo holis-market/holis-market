@@ -34,6 +34,7 @@ lightbox: enlarging images in window				> http://www.html-seminar.de/bildergaler
 jquery: tooltips									> http://jqueryui.com/tooltip
 jquery: slider										> http://bxslider.com/examples
 jquery: countdown									> http://hilios.github.io/jQuery.countdown/
+jquery: google maps									> http://hpneo.github.io/gmaps
 													
 #CSS TRICKS
 vertical align middle 1								> https://mathiasbynens.be/demo/center-vertically-inside-float

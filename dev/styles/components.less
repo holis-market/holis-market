@@ -13,6 +13,24 @@ ul.list {
   list-style-image: url('../images/icon/bubble-black.png');
   margin-left: 20px;
 }
+ul.list-green {
+  list-style-image: url('../images/icon/bubble-green.png');
+}
+ul.list-orange {
+  list-style-image: url('../images/icon/bubble-orange.png');
+}
+ul.list-yellow {
+  list-style-image: url('../images/icon/bubble-yellow.png');
+}
+ul.list li {
+  padding-bottom: 4px;
+  line-height: 1.2em;
+}
+
+/*** TABLES ***/
+table.table td {
+  line-height: 1.3em;
+}
 
 /*** QUOTES ***/
 blockquote {
@@ -74,6 +92,10 @@ blockquote cite:before {
   line-height: 28px;
   margin-top: 10px;
   padding-bottom: 5px;
+}
+.expander-header:hover {
+  .fg-green;
+  border-bottom: 1px solid @cGreen;
 }
 .expander-content {
   padding-top: 15px;
@@ -454,7 +476,7 @@ a.link {
   text-decoration: none;
 }
 a.link:hover {
-  border-bottom: 2px dotted @cGreen;
+  border-bottom: 1px dotted @cGreen;
 }
 
 /*** COUNTDOWN ***/
