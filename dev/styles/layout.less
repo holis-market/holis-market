@@ -20,25 +20,29 @@ url:			http://holis-market.at
   list-style: none;
   position: relative;
   display: inline-table;
+  z-index: 100;
+}
+#header .navbar ul ul:hover {
+  .shadow;
 }
 #header .navbar ul li {
   .fleft;
 }
 #header .navbar ul li a {
-  .fg-black;
+  .xxl;
+  color: @cBlack;
   padding: 10px 30px;
-  font-size: 24px;
   display: block;
   text-decoration: none;
 }
 #header .navbar ul li #nav-we:hover {
-  color: #e6c513;
+  .fg-yellow;
 }
 #header .navbar ul li #nav-offer:hover {
-  color: #ea5e13;
+  .fg-orange;
 }
 #header .navbar ul li #nav-special:hover {
-  color: #7bbb31;
+  .fg-green;
 }
 #header .navbar ul li #nav-join:hover {
   color: #000000;
@@ -48,7 +52,6 @@ url:			http://holis-market.at
   padding: 0;
   position: absolute;
   top: 100%;
-
 }
 #header .navbar ul ul li {
   .bg-white;
@@ -64,11 +67,11 @@ url:			http://holis-market.at
   padding-left: 10px;
 }
 #header .navbar ul ul li a {
-  color: #828282;
+  color: @cGrey;
   font-size: 1.2em;
 }
 #header .navbar ul ul li a:hover {
-  color: #464646;
+  color: @cGreyDark;
 }
 #header .navbar ul ul :first-child {
   margin-top: -5px;
@@ -100,8 +103,8 @@ url:			http://holis-market.at
 .content-header {
   .center;
   .bg-greymain;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .content-line {
   height: 5px;
@@ -152,11 +155,6 @@ url:			http://holis-market.at
   padding-left: 80px;
   padding-right: 80px;
 }
-.content-desc p {
-  .sans;
-  line-height: 20px;
-  font-size: 16px;
-}
 .content-desc-arrow {
   .bg-greymain;
   .center;
@@ -164,7 +162,6 @@ url:			http://holis-market.at
 .content-breadcrumb {
   .bg-greymain;
 }
-
 .content-main {
   .bg-greymain;
   .center;
@@ -195,7 +192,7 @@ url:			http://holis-market.at
         width: 33%;
         float: left;
         a {
-			font-size: 0.95em;
+			.l;
             color: @cGrey;
             text-decoration: none;
         }
@@ -206,10 +203,9 @@ url:			http://holis-market.at
     }
 }
 #footer .footer-header {
+  .xxl;
   margin-bottom: 15px;
-  font-size: 1.4em;
   border-bottom: 1px solid @cGreyDark;
-  padding-bottom: 15px;
 }
 #footer .footer-left a:hover {
   .fg-green;
@@ -222,15 +218,15 @@ url:			http://holis-market.at
 }
 #footer .circle {
   .center;
+  .xxl;
   margin-top: 10px;
   margin-right: 5px;
   width: 40px;
   height: 40px;
   border-radius:20px;
-  font-size: 1.8em;
   color: @cWhite;
   background: @cGrey;
-  padding-top: 4px;
+  padding-top: 2px;
 }
 #footer .circle:hover {
   .bg-yellow;
@@ -239,7 +235,7 @@ url:			http://holis-market.at
   .bg-black;
   .fg-grey;
   .center;
+  .s;
   padding-top: 20px;
   padding-bottom: 5px;
-  font-size: 0.8em;
 }

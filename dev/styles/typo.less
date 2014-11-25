@@ -7,23 +7,55 @@ url:			http://holis-market.at
 ------------------------------------------------------------------ */
 
 
+/*** FONT SIZES***/
+.s {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+.m {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+.l {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+.xl {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+.xxl {
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+.xxxl {
+  font-size: 2.2em;
+  line-height: 2em;
+}
+.xxxxl {
+  font-size: 2.6em;
+  line-height: 2em;
+}
+
+
+/*** GENERAL SETTINGS ***/
 * {
   .sans;
 }
 body {
   .fg-black;
   .bg-white;
-  font-size: 0.8em;
-  line-height: 1em;
+  .xl;
   font-weight: normal;
   font-style: normal;
   margin: 0 auto;
 }
 p {
   .block;
-  line-height: 1.2em;
+  .xl;
 }
 
+/*** STYLING ***/
 .uppercase {
   text-transform: uppercase;
 }
@@ -45,11 +77,13 @@ p {
 .italic {
   font-style: italic;
 }
+
+/*** HEADINGS ***/
 .h1 { /* Seitenüberschrift */
   .fg-greyheadline;
   .sans;
   .bold;
-  font-size: 2.2em;
+  .xxxl;
 }
 h1 { .h1; }
 
@@ -57,8 +91,7 @@ h1 { .h1; }
   .fg-greyheadline;
   .sans;
   .bold;
-  font-size: 1.6em;
-  line-height: 1.6em;
+  .xxl;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -68,8 +101,7 @@ h2 { .h2; }
   .fg-black;
   .sans;
   .bold;
-  font-size: 1.2em;
-  line-height: 1.2em;
+  .xl;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -78,7 +110,7 @@ h3 { .h3; }
 .h4 { /* Bildunterschrift */
   .fg-black;
   .bold;
-  font-size: 1em;
+  .l;
   padding-bottom: 3px;
 }
 h4 { .h4; }
@@ -87,11 +119,11 @@ h4 { .h4; }
   .fg-black;
   .sans;
   .italic;
-  font-size: 0.9em;
+  .m;
   padding-bottom: 2px;
 }
 h5 { .h5; }
 	
-.h6 { /* noch offen */
+.h6 { /* noch nicht definiert */
 }
 h6 { .h6; }

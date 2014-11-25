@@ -10,6 +10,7 @@ url:			http://holis-market.at
 
 /*** LISTS ***/
 ul.list {
+  .xl;
   list-style-image: url('../images/icon/bubble-black.png');
   margin-left: 20px;
 }
@@ -36,12 +37,11 @@ table.table td {
 blockquote {
   .italic;
   .block;
+  .xl;
   font-family: Georgia, serif;
-  font-size: 1.1em;
   width: 100%;
   margin: 0.25em 0;
   padding: 0.25em 40px;
-  line-height: 1.45;
   position: relative;
 }
 blockquote:before {
@@ -50,12 +50,12 @@ blockquote:before {
   font-size: 5em;
   position: absolute;
   left: -8px;
-  top: -20px;
+  top: 18px;
   color: #7a7a7a;
 }
 blockquote cite {
+  .m;
   color: #999999;
-  font-size: 0.9em;
   display: block;
   margin-top: 5px;
 }
@@ -161,13 +161,13 @@ blockquote cite:before {
 }
 .member-pic-large .member-title {
   .bold;
-  font-size: 2.6em;
+  .xxxxl;
   line-height: 1em;
 }
 .member-pic-medium .member-title {
   .bold;
-  font-size: 28px;
-  line-height: 24px;
+  .xxxl;
+  line-height: 1em;
 }
 .member-pic-small .member-title {
   .hide;
@@ -175,14 +175,14 @@ blockquote cite:before {
 .member-pic-large .member-subtitle {
   .fg-white;
   .uppercase;
-  font-size: 1.8em;
+  .xxl;
   line-height: 1em;
 }
 .member-pic-medium .member-subtitle {
   .fg-white;
   .uppercase;
-  font-size: 18px;
-  line-height: 14px;
+  .xl;
+  line-height: 1em;
 }
 .member-pic-small .member-subtitle {
   .hide;
@@ -276,13 +276,12 @@ blockquote cite:before {
   .bold;
   .center;
   .rounded;
+  .xl;
   color: @cWhite;
-  font-size: 16px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .button:hover {
   .outline;
@@ -296,8 +295,8 @@ blockquote cite:before {
 .form-label {
   .bold;
   .fg-grey;
+  .s;
   text-transform: uppercase;
-  font-size: 12px;
   padding-bottom: 2px;
 }
 .form-divider {
@@ -318,7 +317,7 @@ blockquote cite:before {
   .fg-greydark;
   .right;
   .fullwidth;
-  font-size: 13px;
+  .m;
 }
 
 /*** INPUT ***/
@@ -354,8 +353,8 @@ blockquote cite:before {
   width: 100%;
 }
 .metro .input-control input {
+  .xl;
   border: 1px solid @cGrey;
-  font-size: 18px;
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -363,8 +362,8 @@ blockquote cite:before {
   -webkit-appearance: none;
 }
 .metro .input textarea {
+  .xl;
   border: 1px solid @cGrey;
-  font-size: 18px;
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -421,12 +420,12 @@ blockquote cite:before {
   .fleft;
   .fg-white;
   .bold;
+  .xl;
+  line-height: 40px;
   display: block; 
   width: 50%;
   height: 38px;
   padding: 0;
-  line-height: 38px;
-  font-size: 16px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

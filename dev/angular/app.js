@@ -47,6 +47,7 @@
 		.when('/gruenzweilfa', { templateUrl : 'pages/members/gruenzweilfa.html' })
 		.when('/gruenzweils', { templateUrl : 'pages/members/gruenzweils.html' })
 		.when('/gutenbrunner', { templateUrl : 'pages/members/gutenbrunner.html' })
+		.when('/haas', { templateUrl : 'pages/members/haas.html' })
 		.when('/holzer', { templateUrl : 'pages/members/holzer.html' })
 		.when('/hornbogner', { templateUrl : 'pages/members/hornbogner.html' })
 		.when('/kivrak', { templateUrl : 'pages/members/kivrak.html' })
