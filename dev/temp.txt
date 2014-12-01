@@ -1,8 +1,7 @@
-#WEB DEVELOPER TOOLS
+### WEB DEVELOPER TOOLS
 Place text over images on hover without js			> http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/
 Pure CSS Image Hover 								> http://kyleschaeffer.com/development/pure-css-image-hover/
 Metro UI CSS / Live Tiles 							> http://metroui.org.ua/tiles.html
-CSS Image Filters 									> http://html5-demos.appspot.com/static/css/filters/index.html (does not work in FF & IE)
 SMACSS												> https://smacss.com/book/type-module
 Facebook Preview Meta Options						> https://developers.facebook.com/docs/opengraph/using-objects													
 													> http://blog.fanpagekarma.com/2013/10/14/grosse-vorschaubilder-bei-facebook-links-gehts/?lang=de
@@ -16,7 +15,16 @@ W3C Validator										> http://validator.w3.org
 URL Rewriting Apache (301)							> http://httpd.apache.org/docs/2.0/misc/rewriteguide.html
 
 
-#SEO / ANALYTICS
+### CSS3 TOOLS
+CSS3 Animations										> http://www.justinaguilar.com/animations/index.html#
+CSS3 Image Filters 									> http://html5-demos.appspot.com/static/css/filters/index.html (does not work in FF & IE)
+### CSS TRICKS
+vertical align middle 1								> https://mathiasbynens.be/demo/center-vertically-inside-float
+vertical align middle 2								> http://www.joocom.de/blog/css-tipps-tricks-vertikal-zentrieren/
+Clear Fix Hack										> http://css-tricks.com/snippets/css/clear-fix		
+
+
+### SEO / ANALYTICS
 Google Analytics seher.franz@gmail.com				> https://www.google.com/analytics/web/?et&authuser=0#home/a53949357w86762086p90035085/
 Google Analytics holis-market@gmail.com				> https://www.google.com/analytics/web/?et&authuser=0#home/a56545497w90013789p93593441/
 Google Indexierung Dashboard						> https://www.google.com/webmasters/tools/
@@ -25,8 +33,9 @@ Google Indexierung Dashboard						> https://www.google.com/webmasters/tools/
 													> https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?hl=de	
 Google Snippet Preview								> http://www.seomofo.com/snippet-optimizer.html
 Reverse IP Domain Check (Nachbarschaftscheck)		> http://www.yougetsignal.com/tools/web-sites-on-web-server/
+
 												
-#FRAMEWORKS
+### FRAMEWORKS
 headroom (invisble header on scroll)				> http://wicky.nillia.ms/headroom.js/
 mean web stack										> http://mean.io/#!/
 jquery progressive expander							> http://webcloud.se/jQuery-Collapse/
@@ -35,12 +44,8 @@ jquery: tooltips									> http://jqueryui.com/tooltip
 jquery: slider										> http://bxslider.com/examples
 jquery: countdown									> http://hilios.github.io/jQuery.countdown/
 jquery: google maps									> http://hpneo.github.io/gmaps
-													
-#CSS TRICKS
-vertical align middle 1								> https://mathiasbynens.be/demo/center-vertically-inside-float
-vertical align middle 2								> http://www.joocom.de/blog/css-tipps-tricks-vertikal-zentrieren/
-Clear Fix Hack										> http://css-tricks.com/snippets/css/clear-fix												
-													
+
+
 #IMPORTANT
 Die folgende Code-Zeile in den Header einfügen, bei Update via FTP
 <base href="/" />
