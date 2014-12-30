@@ -64,6 +64,7 @@
 		.when('/ninausm', { templateUrl : 'pages/members/ninausm.html' })
 		.when('/oellinger', { templateUrl : 'pages/members/oellinger.html' })
 		.when('/ortner', { templateUrl : 'pages/members/ortner.html' })
+		.when('/palmetshofer', { templateUrl : 'pages/members/palmetshofer.html' })
 		.when('/rabitsch', { templateUrl : 'pages/members/rabitsch.html' })
 		.when('/rainer', { templateUrl : 'pages/members/rainer.html' })
 		.when('/rehberger', { templateUrl : 'pages/members/rehberger.html' })
