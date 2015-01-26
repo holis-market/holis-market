@@ -47,11 +47,13 @@
 		.when('/gruenzweilfa', { templateUrl : 'pages/members/gruenzweilfa.html' })
 		.when('/gruenzweils', { templateUrl : 'pages/members/gruenzweils.html' })
 		.when('/gutenbrunner', { templateUrl : 'pages/members/gutenbrunner.html' })
+		.when('/gutmann', { templateUrl : 'pages/members/gutmann.html' })
 		.when('/haas', { templateUrl : 'pages/members/haas.html' })
 		.when('/holzer', { templateUrl : 'pages/members/holzer.html' })
 		.when('/hornbogner', { templateUrl : 'pages/members/hornbogner.html' })
 		.when('/kivrak', { templateUrl : 'pages/members/kivrak.html' })
 		.when('/kollmann', { templateUrl : 'pages/members/kollmann.html' })
+		.when('/kollross', { templateUrl : 'pages/members/kollross.html' })
 		.when('/kroiss', { templateUrl : 'pages/members/kroiss.html' })
 		.when('/lehner', { templateUrl : 'pages/members/lehner.html' })
 		.when('/leplay', { templateUrl : 'pages/members/leplay.html' })
@@ -61,6 +63,7 @@
 		.when('/moeseneder', { templateUrl : 'pages/members/moeseneder.html' })
 		.when('/moser', { templateUrl : 'pages/members/moser.html' })
 		.when('/neuburger', { templateUrl : 'pages/members/neuburger.html' })
+		.when('/ninausg', { templateUrl : 'pages/members/ninausg.html' })
 		.when('/ninausm', { templateUrl : 'pages/members/ninausm.html' })
 		.when('/oellinger', { templateUrl : 'pages/members/oellinger.html' })
 		.when('/ortner', { templateUrl : 'pages/members/ortner.html' })
@@ -90,7 +93,7 @@
 
 		;
 		// use the HTML5 History API
-		// $locationProvider.html5Mode(true);
+		$locationProvider.html5Mode(true);
 	});
 
 	holisApp.run(['$rootScope', function($rootScope){
