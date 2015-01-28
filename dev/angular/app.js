@@ -58,6 +58,7 @@
 		.when('/lehner', { templateUrl : 'pages/members/lehner.html' })
 		.when('/leplay', { templateUrl : 'pages/members/leplay.html' })
 		.when('/luger', { templateUrl : 'pages/members/luger.html' })
+		.when('/mathys', { templateUrl : 'pages/members/mathys.html' })
 		.when('/mayr', { templateUrl : 'pages/members/mayr.html' })
 		.when('/mayrb', { templateUrl : 'pages/members/mayrb.html' })
 		.when('/moeseneder', { templateUrl : 'pages/members/moeseneder.html' })
