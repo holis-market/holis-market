@@ -31,6 +31,7 @@
 		.when('/kontakt', { templateUrl : 'pages/contact.html' })
 		.when('/adventohnemuell', { templateUrl : 'pages/advent.html' })
 		
+		.when('/abenteuer-familie', { templateUrl : 'pages/members/abenteuer-familie.html' })
 		.when('/altmanninger', { templateUrl : 'pages/members/altmanninger.html' })
 		.when('/anschober', { templateUrl : 'pages/members/anschober.html' })
 		.when('/arzberger', { templateUrl : 'pages/members/arzberger.html' })
